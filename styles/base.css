@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #111111;
+}
+
+h1{
+    background-color: #880088;
+    color: #ffd1dc;
+    text-align: center;
+    padding: 20px;
+    font-size: 48px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #880044;
+}
+
+a{
+    color: #ffd1dc;
+    font-size: 32px;
+    padding: 20px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card{
+    margin: 20px;
+    outline: 2px solid pink;
+    border-radius: 15px;
+}
+
+#aboutMeCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 28px;
+}
+
+h2{
+    text-align: center;
+    background-color: #880088;
+    grid-column: 1/4;
+    color: #ffd1dc;
+    padding: 20px;
+}
+
+img{
+    outline: 2px solid pink;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#meText{
+    grid-column: 1/3;
+    color: #ffd1dc;
+    margin: 20px;
+}
+
+#mePic{
+    grid-column: 3/4;
+    width: 200px;
+}
+
+h3{
+    color: #ffd1dc;
+    text-align: center;
+    grid-column: 1/4;
+    border-bottom: 2px solid #ffd1dc;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+#flagDiv{
+    margin-top: 20px;
+    grid-column: 1/2;
+}
+
+#flagDiv p{
+    text-align: center;
+    color: #ffd1dc;
+    font-style: italic;
+    font-size: 22px;
+}
+
+#belText{
+    grid-column: 2/4;
+    color: #ffd1dc;
+    margin: 20px;
+}
+
+footer p{
+    text-align: center;
+}
