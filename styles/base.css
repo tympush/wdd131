@@ -23,6 +23,10 @@ h1{
     margin: 0;
 }
 
+#name{
+    color: yellow;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -53,6 +57,7 @@ main{
     margin: 20px;
     outline: 2px solid #ffd1dc;
     border-radius: 15px;
+    padding-bottom: 20px;
 }
 
 #aboutMeCard{
@@ -165,4 +170,27 @@ footer p{
 #lastModified{
     font-size: 16px;
     color: yellow;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    main, #aboutMeCard{
+        display: block;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+    
+    nav a{
+        font-size: 20px;
+    }
 }
