@@ -4,6 +4,63 @@ h1, h2, h3, h4{
     font-family: "Lugrasimo", Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 1000px) {
+
+    main, #aboutMeCard{
+        display: block;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    
+    nav a{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav a{
+        text-align: center;
+    }
+
+    img{
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    main{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #aboutMeCard{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        font-size: 28px;
+    }
+
+    img{
+        width: calc(100% - (20px * 2));;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+
+
+
+
 p, a{
     font-family: "Montserrat", Helvetica, sans-serif;
 }
@@ -48,22 +105,11 @@ nav a:hover {
     transform: scale(1.2);
 }
 
-main{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
 .card{
     margin: 20px;
     outline: 2px solid #ffd1dc;
     border-radius: 15px;
     padding-bottom: 20px;
-}
-
-#aboutMeCard{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    font-size: 28px;
 }
 
 h2{
@@ -82,9 +128,6 @@ img{
     outline: 2px solid pink;
     margin-left: 20px;
     margin-right: 20px;
-    width: calc(100% - (20px * 2));;
-    height: auto;
-    object-fit: cover;
 }
 
 #meText{
@@ -170,46 +213,4 @@ footer p{
 #lastModified{
     font-size: 16px;
     color: yellow;
-}
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 980px) {
-
-    main, #aboutMeCard{
-        display: block;
-    }
-
-    h1{
-        font-size: 36px;
-    }
-    
-    nav a{
-        font-size: 20px;
-    }
-
-    p{
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 580px) {
-
-    h1{
-        font-size: 30px;
-    }
-
-    nav{
-        flex-direction: column;
-    }
-
-    nav a{
-        text-align: center;
-    }
 }
