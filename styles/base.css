@@ -180,7 +180,7 @@ footer p{
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
 
     main, #aboutMeCard{
         display: block;
@@ -192,5 +192,24 @@ footer p{
     
     nav a{
         font-size: 20px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    h1{
+        font-size: 30px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav a{
+        text-align: center;
     }
 }
