@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1, h2, h3, h4{
+    font-family: "Lugrasimo", Helvetica, sans-serif;
+}
+
+p, a{
+    font-family: "Montserrat", Helvetica, sans-serif;
+}
+
 body{
     margin: 0px;
     padding: 0px;
@@ -20,10 +30,18 @@ nav{
     margin-bottom: 30px;
 }
 
-a{
+nav a{
     color: #ffd1dc;
-    font-size: 32px;
+    font-size: 30px;
     padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.5s ease, transform 0.5s ease;
+}
+
+nav a:hover {
+    background-color: #ffd1dc;
+    color: #880044;
+    border-radius: 20px;
+    transform: scale(1.2);
 }
 
 main{
@@ -33,7 +51,7 @@ main{
 
 .card{
     margin: 20px;
-    outline: 2px solid pink;
+    outline: 2px solid #ffd1dc;
     border-radius: 15px;
 }
 
@@ -103,29 +121,48 @@ h3{
     margin: 20px;
 }
 
-#resourceCard{
-
-}
-
-#resourceCard h2 {
-
-}
-
-#linkContainer{
-
-}
-
 ul{
     color: #ffd1dc;
     font-size: 32px;
+    align-content: center;
+    height: 75%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
-ul li{
+li a{
+    color: #ffd1dc;
+    font-size: 26px;
+    transition: transform 0.3s ease;
+}
 
+li a:hover{
+    font-size: 32px;
+}
+
+li a:visited{
+    color: #ffaaff;
+    font-size: 26px;
+}
+
+footer{
+    background-color: #880088;
+    margin-top: 30px;
+    padding: 20px;
 }
 
 footer p{
     text-align: center;
-    background-color: #880088;
-    margin-top: 30px;
+    margin: 0px;
+}
+
+#info{
+    font-size: 22px;
+    padding-bottom: 10px;
+    color: #ffd1dc;
+}
+
+#lastModified{
+    font-size: 16px;
+    color: yellow;
 }

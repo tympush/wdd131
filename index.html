@@ -6,7 +6,7 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Tymur Pushnoy</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Tymur Pushnoy - Home Page - About Me - Web Dev Resources">
     <link type="text/css" rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js"></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
 
@@ -43,22 +43,20 @@
         <section class="card" id="resourceCard">
             <h2>Web Dev Resources</h2>
 
-            <div id="linkContainer">
-                <ul>
-                    <li><a href="https://github.com/">GitHub</a></li>
-                    <li><a href="https://dev.to/">Dev To</a></li>
-                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                    <li><a href="https://www.udemy.com/">Udemy</a></li>
-                    <li><a href="https://picsum.photos/">Lorem Picsum</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                <li><a href="https://dev.to/" target="_blank">Dev To</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://picsum.photos/" target="_blank">Lorem Picsum</a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy;<span id="currentyear"></span> Tymur Pushnoy Belgium</p>
+        <p id="info">&copy;<span id="currentyear"></span> 🐙 Tymur Pushnoy 🐙 Belgium</p>
         <p id="lastModified"></p>
     </footer>
     
