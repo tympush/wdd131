@@ -13,10 +13,13 @@ figcaption, #menu{
 
     header{
         display: flex;
+        position: relative;
     }
 
     header.active{
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
 
     h1.headerTitle{
@@ -33,10 +36,15 @@ figcaption, #menu{
         font-weight: bold;
         justify-content: flex-end;
         margin-left: auto;
+        position: relative;
+        grid-row: 1/2;
+        grid-row: 1/2;
     }
     
     #menu::before{
         content: "☰";
+        position: absolute;
+        right: 10;
     }
     
     #menu.show::before{
@@ -50,6 +58,8 @@ figcaption, #menu{
     nav.show{
         padding-bottom: 20px;
         padding-top: 20px;
+        grid-row: 1/2;
+        grid-row: 1/2;
     }
 
     nav.show a{
@@ -59,6 +69,8 @@ figcaption, #menu{
     nav a{
         font-size: 26px;
         text-align: center;
+        margin-left: 60px;
+        margin-right: 20px;
     }
 }
 
@@ -107,17 +119,16 @@ h2{
 }
 
 div{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-div figure{
-    flex: 25%;
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    grid-gap: 25px;
+    place-items: center;
 }
 
 div img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: auto; 
+
 }
 
 div figcaption {
