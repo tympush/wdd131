@@ -6,9 +6,66 @@
     <title>WDD131 - Country Page - Tymur Pushnoy</title>
     <meta name="description" content="WDD 131 - Country Page - Belgium - Tymur Pushnoy">
     <link rel="stylesheet" href="styles/place.css">
-    <script src="scripts/place.js" async></script>
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" async></script>
 </head>
 <body>
     
+    <header>
+        <h1>Belgium</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="images/atomium-large.webp" media="(min-width: 1280px)" width="1920" height="900">
+            <source srcset="images/atomium-large.webp" media="(min-width: 800px)" width="1280" height="600">
+            <img src="images/atomium-small.webp" alt="Atomium" width="800" height="1100">
+        </picture>
+
+        <div class="container" id="dataContainer">
+            <h2 class="containerTitle">Data</h2>
+            <ul class="containerListL">
+                <li>Area:</li>
+                <li>Population:</li>
+                <li>Capital:</li>
+                <li>Languages:</li>
+                <li>Currency:</li>
+                <li>Time Zone:</li>
+                <li>Calling Code:</li>
+                <li>Internet TLD:</li>
+            </ul>
+            <ul class="containerListR">
+                <li>30,688 km²</li>
+                <li>11,711,343</li>
+                <li>Brussels</li>
+                <li>Dutch, French, German</li>
+                <li>Euro</li>
+                <li>(GMT+2)</li>
+                <li>+32</li>
+                <li>.be</li>
+            </ul>
+        </div>
+
+        <div class="container" id="weatherContainer">
+            <h2 class="containerTitle">Weather</h2>
+            <ul class="containerListL">
+                <li>Temperature:</li>
+                <li>Conditions:</li>
+                <li>Wind:</li>
+                <li>Wind Chill:</li>
+            </ul>
+            <ul class="containerListR">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p id="info">&copy;<span id="currentyear"></span> 🐙 Tymur Pushnoy 🐙 Belgium</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,117 @@
+@media screen and (max-width: 800px){
+
+    .containerTitle{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 800px){
+    
+    main{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+    }
+
+    picture{
+        grid-column: 1/4;
+        grid-row: 1/4;
+    }
+
+    .container{
+        background-color: #ffffffaa
+    }
+
+    .containerTitle{
+        background-color: #ff0000aa;
+        margin-right: 40px;
+    }
+
+    #dataContainer{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+
+    #weatherContainer{
+        grid-column: 3/4;
+        grid-row: 2/4;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: black;
+    border-bottom: 10px solid #ff0000;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 64px;
+    text-align: center;
+    color: yellow;
+    padding: 10px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 1fr;
+}
+
+h2{
+    padding: 20px;
+    font-size: 38px;
+}
+
+.containerTitle{
+    grid-column: 1/3;
+}
+
+.containerListL{
+    text-align: right;
+    font-weight: bold;
+}
+
+.containerListR{
+    text-align: left;
+}
+
+li::marker{
+    content: "";
+}
+
+footer{
+    background-color: black;
+    margin-top: 30px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+footer p{
+    text-align: center;
+    margin: 0px;
+}
+
+#info{
+    font-size: 22px;
+    padding-bottom: 10px;
+    color: #ffd1dc;
+}
+
+#lastModified{
+    font-size: 16px;
+    color: yellow;
+}
