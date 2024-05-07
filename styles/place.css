@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap') preconnect;
 
 h1, h2{
     font-family: "Lugrasimo", Helvetica, sans-serif;
@@ -46,8 +46,8 @@ p, li{
     }
 
     .containerTitle{
-        background-color: #ff0000;
-        border-bottom: 6px solid #ffff00;
+        background-color: var(--color3);
+        border-bottom: 6px solid var(--color2);
         margin-right: 40px;
     }
 
@@ -75,6 +75,11 @@ p, li{
 
 :root{
     background-color: black;
+    --border-width: 20px;
+    --border-style: solid;
+    --color1: #000000;
+    --color2: #ffff00;
+    --color3: #ff0000;
 }
 
 body{
@@ -85,7 +90,7 @@ body{
 
 header{
     background-color: black;
-    border-bottom: 20px solid #ff0000;
+    border-bottom: var(--border-width) var(--border-style) var(--color3);
     overflow: hidden;
 }
 
@@ -98,7 +103,7 @@ h1{
 }
 
 main{
-    border-bottom: 20px solid #ff0000;
+    border-bottom: var(--border-width) var(--border-style) var(--color3);
 }
 
 img{
@@ -170,5 +175,5 @@ footer p{
 
 #lastModified{
     font-size: 16px;
-    color: yellow;
+    color: var(--color2);
 }
