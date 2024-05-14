@@ -79,54 +79,123 @@ const temples = [
         imageUrl:
         "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/london-england/400x250/london-england-temple-lds-650239-wallpaper.jpg"
     },
+    {
+      templeName: "Paris France",
+      location: "Le Chesnay, France",
+      dedicated: "2017, May, 21",
+      area: 44175,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/2018/400x250/Paris-Temple02.jpg"
+    },
+    {
+      templeName: "Preston England",
+      location: "Lancashire, England",
+      dedicated: "1998, June, 7",
+      area: 69630,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/preston-england/400x250/preston-temple-765118-wallpaper.jpg"
+    },
+    {
+      templeName: "Raleigh North Carolina",
+      location: "Apex, United States",
+      dedicated: "1999, December, 18",
+      area: 12864,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/raleigh-north-carolina/400x250/1-1f1daf252144e68f95bf3b56d59479cbefbe02c8.jpeg"
+    },
+    {
+      templeName: "Fukuoka Japan",
+      location: "Fukuoka, Japan",
+      dedicated: "2000, June, 11",
+      area: 10700,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/fukuoka-japan/400x250/fukuoka-japan-temple-lds-306863-wallpaper.jpg"
+    },
+    {
+      templeName: "Colonia Juárez Chihuahua Mexico",
+      location: "Colonia Juárez, Chihuahua Mexico",
+      dedicated: "1999, March, 6",
+      area: 6800,
+      imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/colonia-juarez-chihuahua-mexico/400x250/colonia-juarez-chihuahua-mexico-temple-1543027-wallpaper.jpg"
+    }
 ];
+
+
+const homeButton = document.querySelector("#homeButton");
+const oldButton = document.querySelector("#oldButton");
+const newButton = document.querySelector("#newButton");
+const largeButton = document.querySelector("#largeButton");
+const smallButton = document.querySelector("#smallButton");
+
+homeButton.addEventListener("click", () => {
+  createTempleCards(temples)
+});
+
+oldButton.addEventListener("click", () => {
+  createTempleCards(temples.filter(temple => parseInt(temple.dedicated.split(',')[0]) < 1900))
+});
+
+newButton.addEventListener("click", () => {
+  createTempleCards(temples.filter(temple => parseInt(temple.dedicated.split(',')[0]) > 2000))
+});
+
+largeButton.addEventListener("click", () => {
+  createTempleCards(temples.filter(temple => temple.area > 90000))
+});
+
+smallButton.addEventListener("click", () => {
+  createTempleCards(temples.filter(temple => temple.area < 10000))
+});
 
 
 const templeContainer = document.getElementById("templeContainer");
 
-temples.forEach((temple) => {
-    const templeCard = document.createElement("figure");
-    templeCard.classList.add("templeCard");
+function createTempleCards(filteredTemples) {
+  templeContainer.innerHTML = "";
 
-    const templeImage = document.createElement("img");
-    templeImage.src = temple.imageUrl;
-    templeImage.alt = temple.templeName;
-    templeImage.loading = "lazy";
-    templeCard.appendChild(templeImage);
+  filteredTemples.forEach((temple) => {
+      const templeCard = document.createElement("figure");
+      templeCard.classList.add("templeCard");
 
-    const templeInfo = document.createElement("div");
-    templeInfo.classList.add("templeInfo");
+      const name = document.createElement("h3");
+      name.textContent = temple.templeName;
+      templeCard.appendChild(name);
 
-    const name = document.createElement("h3");
-    name.textContent = temple.templeName;
-    templeInfo.appendChild(name);
+      const location = document.createElement("figcaption");
+      location.textContent = `Location: ${temple.location}`;
+      templeCard.appendChild(location);
 
-    const location = document.createElement("p");
-    location.textContent = "Location: " + temple.location;
-    templeInfo.appendChild(location);
+      const dedicated = document.createElement("figcaption");
+      dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+      templeCard.appendChild(dedicated);
 
-    const dedicated = document.createElement("p");
-    dedicated.textContent = "Dedicated: " + temple.dedicated;
-    templeInfo.appendChild(dedicated);
+      const area = document.createElement("figcaption");
+      area.textContent = `Size: ${temple.area.toLocaleString()} sq ft`;
+      templeCard.appendChild(area);
 
-    const area = document.createElement("p");
-    area.textContent = "Area: " + temple.area.toLocaleString() + " sq ft";
-    templeInfo.appendChild(area);
+      const templeImage = document.createElement("img");
+      templeImage.src = temple.imageUrl;
+      templeImage.alt = temple.templeName;
+      templeImage.loading = "lazy";
+      templeCard.appendChild(templeImage);
 
-    templeCard.appendChild(templeInfo);
-
-    templeContainer.appendChild(templeCard);
-});
+      templeContainer.appendChild(templeCard);
+  });
+}
 
 
 const mainnav = document.querySelector(".navigation");
 const hambutton = document.querySelector("#menu");
-const title = document.querySelector(".headerTitle")
-const header = document.querySelector("header")
+const title = document.querySelector(".headerTitle");
+const header = document.querySelector("header");
 
 hambutton.addEventListener("click", () => {
     mainnav.classList.toggle("show");
     hambutton.classList.toggle("show");
     title.classList.toggle("hidden");
-    header.classList.toggle("active")
+    header.classList.toggle("active");
 });
+
+
+createTempleCards(temples);
