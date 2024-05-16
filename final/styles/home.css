@@ -3,7 +3,7 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(550px, 1fr)); 
     grid-gap: 25px;
     place-items: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 main div{
@@ -18,33 +18,85 @@ main div{
 
 main div:hover{
     transform: scale(1.1);
+    box-shadow: 0 0 20px 5px #ccccff;
 }
 
 main div img{
-    width: 70px;
+    height: 70px;
     align-self: center;
+    filter: invert(86%) sepia(97%) saturate(2063%) hue-rotate(325deg) brightness(106%) contrast(103%);
 }
 
-main div a{
+main a{
     text-decoration: none;
-    font-size: 40px;
+}
+
+main div p{
+    font-size: 36px;
     align-self: center;
     margin-left: 20px;
     margin-right: 20px;
+    color: #ffe137;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#divAC{
+    background-color: #af932355;
+}
+
+#divUM{
+    background-color: #2a4fd855;
+}
+
+#divDA{
+    background-color: #093f2155;
+}
+
+#divBA{
+    background-color: #9a111555;
+}
+
+#divSW{
+    background-color: #4871a755;
+}
+
+#divIK{
+    background-color: #2d416455;
 }
 
 #divWE{
-    background-color: red;
+    background-color: #f82a0e55;
 }
 
 #divDG{
-    background-color: green;
+    background-color: #43722855;
 }
 
 #divTS{
-    background-color: blue;
+    background-color: #54348f55;
 }
 
 #divCK{
-    background-color: grey;
+    background-color: #8a8a8a55;
+}
+
+#divN{
+    background-color:  #92612f55;
+}
+
+.divLock img{
+    filter: invert(24%) sepia(25%) saturate(0%) hue-rotate(201deg) brightness(104%) contrast(100%);
+}
+
+/*.divLock a{
+    color: #444444;
+}*/
+
+.divLock{
+    background-color: #222222;
+}
+
+.divLock:hover{
+    box-shadow: 0 0 20px 5px #555555;
 }
