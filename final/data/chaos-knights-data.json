@@ -1,0 +1,135 @@
+[
+    {
+        "name": "Chaos Cerastus Knight Acheron",
+        "type": "Character",
+        "limit": 3,
+        "cost": 435,
+        "image": "images/acheron.webp"
+    },
+    {
+        "name": "Chaos Cerastus Knight Atrapos",
+        "type": "Character",
+        "limit": 3,
+        "cost": 435,
+        "image": "images/atrapos.webp"
+    },
+    {
+        "name": "Chaos Cerastus Knight Castigator",
+        "type": "Character",
+        "limit": 3,
+        "cost": 445,
+        "image": "images/castigator.webp"
+    },
+    {
+        "name": "Chaos Cerastus Knight Lancer",
+        "type": "Character",
+        "limit": 3,
+        "cost": 435,
+        "image": "images/lancer.webp"
+    },
+    {
+        "name": "Chaos Questoris Knight Magaera",
+        "type": "Character",
+        "limit": 3,
+        "cost": 435,
+        "image": "images/magaera.webp"
+    },
+    {
+        "name": "Chaos Questoris Knight Styrix",
+        "type": "Character",
+        "limit": 3,
+        "cost": 465,
+        "image": "images/styrix.webp"
+    },
+    {
+        "name": "Knight Abominant",
+        "type": "Character",
+        "limit": 3,
+        "cost": 400,
+        "image": "images/abominant.webp"
+    },
+    {
+        "name": "Knight Desecrator",
+        "type": "Character",
+        "limit": 3,
+        "cost": 425,
+        "image": "images/desecrator.webp"
+    },
+    {
+        "name": "Knight Despoiler",
+        "type": "Character",
+        "limit": 3,
+        "cost": 440,
+        "image": "images/despoiler.webp"
+    },
+    {
+        "name": "Knight Rampager",
+        "type": "Character",
+        "limit": 3,
+        "cost": 380,
+        "image": "images/rampager.webp"
+    },
+    {
+        "name": "Knight Tyrant",
+        "type": "Character",
+        "limit": 3,
+        "cost": 510,
+        "image": "images/tyrant.webp"
+    },
+    {
+        "name": "War Dog Brigand",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 170,
+        "image": "images/brigand.webp"
+    },
+    {
+        "name": "War Dog Executioner",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 140,
+        "image": "images/executioner.webp"
+    },
+    {
+        "name": "War Dog Huntsman",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 150,
+        "image": "images/huntsman.webp"
+    },
+    {
+        "name": "War Dog Karnivore",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 140,
+        "image": "images/karnivore.webp"
+    },
+    {
+        "name": "War Dog Moirax",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 160,
+        "image": "images/moirax.webp"
+    },
+    {
+        "name": "War Dog Stalker",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 150,
+        "image": "images/stalker.webp"
+    },
+    {
+        "name": "Chaos Acastus Knight Asterius",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 765,
+        "image": "images/asterius.webp"
+    },
+    {
+        "name": "Chaos Acastus Knight Porphyrion",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 700,
+        "image": "images/porphyrion.webp"
+    }
+]
