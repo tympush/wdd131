@@ -5,9 +5,43 @@ body{
     text-align: center;
 }
 
+header{
+    display: flex;
+}
+
+header img{
+    width: 70px;
+}
+
+#headerWE{
+    color: #dd0000;
+}
+
+#headerWE img{
+    filter: invert(13%) sepia(68%) saturate(6888%) hue-rotate(358deg) brightness(84%) contrast(117%);
+}
+
+#headerDG{
+    color: #00dd00;
+}
+
+#headerDG img{
+    filter: invert(41%) sepia(80%) saturate(1330%) hue-rotate(88deg) brightness(115%) contrast(113%);
+}
+
+#headerTS{
+    color: #0000dd;
+}
+
+#headerTS img{
+    filter: invert(13%) sepia(100%) saturate(4578%) hue-rotate(240deg) brightness(77%) contrast(134%);
+}
+
 h1{
     margin-top: 20px;
     text-shadow: 0 0 5px gold;
+    padding: 20px;
+    font-size: 48px;
 }
 
 h2{
@@ -31,7 +65,11 @@ h2{
     overflow-y: scroll;
 }
 
-img{
+#userList div:not(:has(article)){
+    display: none;
+}
+
+main img{
     width: 100px;
     border: 2px solid gold;
 }
