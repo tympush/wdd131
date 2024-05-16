@@ -11,7 +11,7 @@ header{
 
 #logo{
     grid-column: 1/2;
-    padding-top: 5px;
+    margin: 20px;
     align-self: center;
     width: 100px;
     height: auto;
@@ -31,15 +31,20 @@ header a{
     color: white;
     font-size: 48px;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 30px;
     align-self: center;
+    transition: padding .5s ease;
+}
+
+header a:hover{
+    padding-bottom: 20px;
 }
 
 .changing-image-container{
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: -105px;
+    margin-top: -140px;
     z-index: -1;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
