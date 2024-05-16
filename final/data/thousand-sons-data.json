@@ -1,0 +1,191 @@
+[
+    {
+        "name": "Magnus the Red",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 440,
+        "image": "images/magnus-the-red.webp"
+    },
+    {
+        "name": "Ahriman",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 130,
+        "image": "images/ahriman.webp"
+    },
+    {
+        "name": "Ahriman  on Disc of Tzeentch",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 140,
+        "image": "images/ahriman-on-disc.webp"
+    },
+    {
+        "name": "Exalted Sorcerer",
+        "type": "Character",
+        "limit": 3,
+        "cost": 100,
+        "image": "images/exalted-sorcerer.webp"
+    },
+    {
+        "name": "Exalted Sorcerer on Disc of Tzeentch",
+        "type": "Character",
+        "limit": 3,
+        "cost": 115,
+        "image": "images/exalted-sorcerer-on-disc.webp"
+    },
+    {
+        "name": "Infernal Master",
+        "type": "Character",
+        "limit": 3,
+        "cost": 90,
+        "image": "images/infernal-master.webp"
+    },
+    {
+        "name": "Thousand Sons Daemon Prince",
+        "type": "Character",
+        "limit": 3,
+        "cost": 170,
+        "image": "images/daemon-prince.webp"
+    },
+    {
+        "name": "Thousand Sons Daemon Prince with wings",
+        "type": "Character",
+        "limit": 3,
+        "cost": 180,
+        "image": "images/daemon-prince-with-wings.webp"
+    },
+    {
+        "name": "Thousand Sons Sorcerer",
+        "type": "Character",
+        "limit": 3,
+        "cost": 95,
+        "image": "images/chaos-sorcerer.webp"
+    },
+    {
+        "name": "Thousand Sons Sorcerer in Terminator Armour",
+        "type": "Character",
+        "limit": 3,
+        "cost": 115,
+        "image": "images/chaos-sorcerer-in-terminator-armour.webp"
+    },
+    {
+        "name": "Tzaangor Shaman",
+        "type": "Character",
+        "limit": 3,
+        "cost": 60,
+        "image": "images/tzaangor-shaman.webp"
+    },
+    {
+        "name": "Rubric Marines",
+        "type": "Battleline",
+        "limit": 3,
+        "cost": 105,
+        "image": "images/rubric-marines.webp"
+    },
+    {
+        "name": "Tzaangors",
+        "type": "Battleline",
+        "limit": 3,
+        "cost": 65,
+        "image": "images/tzaangors.webp"
+    },
+    {
+        "name": "Scarab Occult Terminators",
+        "type": "Infantry",
+        "limit": 6,
+        "cost": 200,
+        "image": "images/scarab-occult-terminators.webp"
+    },
+    {
+        "name": "Thousand Sons Cultists",
+        "type": "Infantry",
+        "limit": 6,
+        "cost": 55,
+        "image": "images/chaos-cultists.webp"
+    },
+    {
+        "name": "Tzaangor Enlightened",
+        "type": "Mounted",
+        "limit": 3,
+        "cost": 45,
+        "image": "images/tzaangor-enlightened.webp"
+    },
+    {
+        "name": "Thousand Sons Chaos Spawn",
+        "type": "Beast",
+        "limit": 3,
+        "cost": 65,
+        "image": "images/chaos-spawn.webp"
+    },
+    {
+        "name": "Mutalith Vortex Beast",
+        "type": "Monster",
+        "limit": 3,
+        "cost": 165,
+        "image": "images/mutalith-vortex-beast.webp"
+    },
+    {
+        "name": "Thousand Sons Defiler",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 190,
+        "image": "images/defiler.webp"
+    },
+    {
+        "name": "Thousand Sons Forgefiend",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 135,
+        "image": "images/forgefiend.webp"
+    },
+    {
+        "name": "Thousand Sons Helbrute",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/helbrute.webp"
+    },
+    {
+        "name": "Thousand Sons Heldrake",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 195,
+        "image": "images/heldrake.webp"
+    },
+    {
+        "name": "Thousand Sons Land Raider",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 240,
+        "image": "images/chaos-land-raider.webp"
+    },
+    {
+        "name": "Thousand Sons Maulerfiend",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 140,
+        "image": "images/maulerfiend.webp"
+    },
+    {
+        "name": "Thousand Sons Predator Annihilator",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/chaos-predator-annihilator.webp"
+    },
+    {
+        "name": "Thousand Sons Predator Destructor",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/chaos-predator-destructor.webp"
+    },
+    {
+        "name": "Thousand Sons Rhino",
+        "type": "DedicatedTransport",
+        "limit": 6,
+        "cost": 75,
+        "image": "images/chaos-rhino.webp"
+    }
+]

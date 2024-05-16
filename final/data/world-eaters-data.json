@@ -1,0 +1,163 @@
+[
+    {
+        "name": "Angron",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 415,
+        "image": "images/angron.webp"
+    },
+    {
+        "name": "Khârn the Betrayer",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 100,
+        "image": "images/kharn-the-betrayer.webp"
+    },
+    {
+        "name": "Lord Invocatus",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 140,
+        "image": "images/lord-invocatus.webp"
+    },
+    {
+        "name": "World Eaters Daemon Prince",
+        "type": "Character",
+        "limit": 3,
+        "cost": 200,
+        "image": "images/daemon-prince.webp"
+    },
+    {
+        "name": "World Eaters Daemon Prince with wings",
+        "type": "Character",
+        "limit": 3,
+        "cost": 195,
+        "image": "images/daemon-prince-with-wings.webp"
+    },
+    {
+        "name": "World Eaters Lord on Juggernaut",
+        "type": "Character",
+        "limit": 3,
+        "cost": 100,
+        "image": "images/lord-on-juggernaut.webp"
+    },
+    {
+        "name": "World Eaters Master of Executions",
+        "type": "Character",
+        "limit": 3,
+        "cost": 100,
+        "image": "images/master-of-executions.webp"
+    },
+    {
+        "name": "Jakhals",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 70,
+        "image": "images/jakhals.webp"
+    },
+    {
+        "name": "Khorne Berzerkers",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 200,
+        "image": "images/khorne-berzerkers.webp"
+    },
+    {
+        "name": "Eightbound",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 145,
+        "image": "images/eightbound.webp"
+    },
+    {
+        "name": "Exalted Eightbound",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 160,
+        "image": "images/exalted-eightbound.webp"
+    },
+    {
+        "name": "World Eaters Terminator Squad",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 190,
+        "image": "images/chaos-terminators.webp"
+    },
+    {
+        "name": "World Eaters Chaos Spawn",
+        "type": "Beast",
+        "limit": 3,
+        "cost": 65,
+        "image": "images/chaos-spawn.webp"
+    },
+    {
+        "name": "Khorne Lord of Skulls",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 450,
+        "image": "images/lord-of-skulls.webp"
+    },
+    {
+        "name": "World Eaters Defiler",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 190,
+        "image": "images/defiler.webp"
+    },
+    {
+        "name": "World Eaters Forgefiend",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 145,
+        "image": "images/forgefiend.webp"
+    },
+    {
+        "name": "World Eaters Helbrute",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 140,
+        "image": "images/helbrute.webp"
+    },
+    {
+        "name": "World Eaters Heldrake",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 210,
+        "image": "images/heldrake.webp"
+    },
+    {
+        "name": "World Eaters Land Raider",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 240,
+        "image": "images/chaos-land-raider.webp"
+    },
+    {
+        "name": "World Eaters Maulerfiend",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 155,
+        "image": "images/maulerfiend.webp"
+    },
+    {
+        "name": "World Eaters Predator Annihilator",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/chaos-predator-annihilator.webp"
+    },
+    {
+        "name": "World Eaters Predator Destructor",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/chaos-predator-destructor.webp"
+    },
+    {
+        "name": "World Eaters Rhino",
+        "type": "DedicatedTransport",
+        "limit": 6,
+        "cost": 75,
+        "image": "images/chaos-rhino.webp"
+    }
+]

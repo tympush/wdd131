@@ -1,0 +1,219 @@
+[
+    {
+        "name": "Mortarion",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 325,
+        "image": "images/mortarion.webp"
+    },
+    {
+        "name": "Typhus",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 80,
+        "image": "images/typhus.webp"
+    },
+    {
+        "name": "Biologus Putrifier",
+        "type": "Character",
+        "limit": 3,
+        "cost": 50,
+        "image": "images/biologus-putrifier.webp"
+    },
+    {
+        "name": "Death Guard Chaos Lord",
+        "type": "Character",
+        "limit": 3,
+        "cost": 65,
+        "image": "images/chaos-lord.webp"
+    },
+    {
+        "name": "Death Guard Chaos Lord in Terminator Armour",
+        "type": "Character",
+        "limit": 3,
+        "cost": 85,
+        "image": "images/chaos-lord-in-terminator-armour.webp"
+    },
+    {
+        "name": "Death Guard Daemon Prince",
+        "type": "Character",
+        "limit": 3,
+        "cost": 160,
+        "image": "images/daemon-prince.webp"
+    },
+    {
+        "name": "Death Guard Daemon Prince with wings",
+        "type": "Character",
+        "limit": 3,
+        "cost": 195,
+        "image": "images/daemon-prince-with-wings.webp"
+    },
+    {
+        "name": "Death Guard Icon Bearer",
+        "type": "Character",
+        "limit": 3,
+        "cost": 45,
+        "image": "images/death-guard-icon-bearer.webp"
+    },
+    {
+        "name": "Death Guard Sorcerer in Terminator Armour",
+        "type": "Character",
+        "limit": 3,
+        "cost": 70,
+        "image": "images/chaos-sorcerer-in-terminator-armour.webp"
+    },
+    {
+        "name": "Foul Blightspawn",
+        "type": "Character",
+        "limit": 3,
+        "cost": 50,
+        "image": "images/foul-blightspawn.webp"
+    },
+    {
+        "name": "Lord of Contagion",
+        "type": "Character",
+        "limit": 3,
+        "cost": 80,
+        "image": "images/lord-of-contagion.webp"
+    },
+    {
+        "name": "Lord of Virulence",
+        "type": "Character",
+        "limit": 3,
+        "cost": 80,
+        "image": "images/lord-of-virulence.webp"
+    },
+    {
+        "name": "Malignant Plaguecaster",
+        "type": "Character",
+        "limit": 3,
+        "cost": 65,
+        "image": "images/malignant-plaguecaster.webp"
+    },
+    {
+        "name": "Noxious Blightbringer",
+        "type": "Character",
+        "limit": 3,
+        "cost": 50,
+        "image": "images/noxious-blightbringer.webp"
+    },
+    {
+        "name": "Plague Surgeon",
+        "type": "Character",
+        "limit": 3,
+        "cost": 65,
+        "image": "images/plague-surgeon.webp"
+    },
+    {
+        "name": "Tallyman",
+        "type": "Character",
+        "limit": 3,
+        "cost": 4,
+        "image": "images/tallyman.webp"
+    },
+    {
+        "name": "Plague Marines",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 90,
+        "image": "images/plague-marines.webp"
+    },
+    {
+        "name": "Blightlord Terminators",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 165,
+        "image": "images/blightlord-terminators.webp"
+    },
+    {
+        "name": "Death Guard Cultists",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 50,
+        "image": "images/chaos-cultists.webp"
+    },
+    {
+        "name": "Deathshroud Terminators",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 120,
+        "image": "images/deathshroud-terminators.webp"
+    },
+    {
+        "name": "Poxwalkers",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 50,
+        "image": "images/poxwalkers.webp"
+    },
+    {
+        "name": "Death Guard Chaos Spawn",
+        "type": "Beast",
+        "limit": 3,
+        "cost": 70,
+        "image": "images/chaos-spawn.webp"
+    },
+    {
+        "name": "Death Guard Defiler",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 190,
+        "image": "images/defiler.webp"
+    },
+    {
+        "name": "Death Guard Helbrute",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/helbrute.webp"
+    },
+    {
+        "name": "Death Guard Land Raider",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 240,
+        "image": "images/chaos-land-raider.webp"
+    },
+    {
+        "name": "Death Guard Predator Annihilator",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/chaos-predator-annihilator.webp"
+    },
+    {
+        "name": "Death Guard Predator Destructor",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/chaos-predator-destructor.webp"
+    },
+    {
+        "name": "Foetid Bloat-drone",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 90,
+        "image": "images/foetid-bloat-drone.webp"
+    },
+    {
+        "name": "Myphitic Blight-hauler",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 100,
+        "image": "images/myphitic-blight-hauler.webp"
+    },
+    {
+        "name": "Plagueburst Crawler",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 180,
+        "image": "images/plagueburst-crawler.webp"
+    },
+    {
+        "name": "Death Guard Rhino",
+        "type": "DedicatedTransport",
+        "limit": 6,
+        "cost": 75,
+        "image": "images/chaos-rhino.webp"
+    }
+]
