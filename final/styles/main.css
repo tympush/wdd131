@@ -33,11 +33,12 @@ header nav a{
     text-decoration: none;
     margin-right: 30px;
     align-self: center;
-    transition: padding .5s ease;
+    transition: padding .5s ease, color .5s;
 }
 
 header nav a:hover{
     padding-bottom: 20px;
+    color: #ccccff;
 }
 
 .changing-image-container{
