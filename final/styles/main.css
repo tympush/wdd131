@@ -27,7 +27,7 @@ header nav{
     display: flex;
 }
 
-header a{
+header nav a{
     color: white;
     font-size: 48px;
     text-decoration: none;
@@ -36,7 +36,7 @@ header a{
     transition: padding .5s ease;
 }
 
-header a:hover{
+header nav a:hover{
     padding-bottom: 20px;
 }
 
@@ -44,7 +44,7 @@ header a:hover{
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: -140px;
+    margin-top: -145px;
     z-index: -1;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;

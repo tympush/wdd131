@@ -1,5 +1,7 @@
 const images = document.querySelectorAll('.changing-image');
-let currentIndex = 0;
+
+let currentIndex = Math.floor(Math.random() * images.length);
+images[currentIndex].classList.add('active');
 
 function changeImage() {
     const nextIndex = (currentIndex + 1) % images.length;
