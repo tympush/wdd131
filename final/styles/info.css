@@ -23,8 +23,6 @@
     margin-left: 20px;
     margin-right: 20px;
     color: #eeeeee;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .infoBox{
@@ -33,6 +31,8 @@
     height: 400px;
     overflow: hidden;
     overflow-y: scroll;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .quote{
