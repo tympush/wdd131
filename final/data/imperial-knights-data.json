@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Canis Rex",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 435,
+        "image": "images/preceptor.webp"
+    },
+    {
+        "name": "Cerastus Knight Acheron",
+        "type": "Character",
+        "limit": 3,
+        "cost": 425,
+        "image": "images/acheron.webp"
+    },
+    {
+        "name": "Cerastus Knight Atrapos",
+        "type": "Character",
+        "limit": 3,
+        "cost": 440,
+        "image": "images/atrapos.webp"
+    },
+    {
+        "name": "Cerastus Knight Castigator",
+        "type": "Character",
+        "limit": 3,
+        "cost": 465,
+        "image": "images/castigator.webp"
+    },
+    {
+        "name": "Cerastus Knight Lancer",
+        "type": "Character",
+        "limit": 3,
+        "cost": 465,
+        "image": "images/lancer.webp"
+    },
+    {
+        "name": "Knight Castellan",
+        "type": "Character",
+        "limit": 3,
+        "cost": 525,
+        "image": "images/castellan.webp"
+    },
+    {
+        "name": "Knight Crusader",
+        "type": "Character",
+        "limit": 3,
+        "cost": 445,
+        "image": "images/crusader.webp"
+    },
+    {
+        "name": "Knight Errant",
+        "type": "Character",
+        "limit": 3,
+        "cost": 405,
+        "image": "images/errant.webp"
+    },
+    {
+        "name": "Knight Gallant",
+        "type": "Character",
+        "limit": 3,
+        "cost": 400,
+        "image": "images/gallant.webp"
+    },
+    {
+        "name": "Knight Paladin",
+        "type": "Character",
+        "limit": 3,
+        "cost": 425,
+        "image": "images/paladin.webp"
+    },
+    {
+        "name": "Knight Preceptor",
+        "type": "Character",
+        "limit": 3,
+        "cost": 405,
+        "image": "images/preceptor.webp"
+    },
+    {
+        "name": "Knight Valiant",
+        "type": "Character",
+        "limit": 3,
+        "cost": 530,
+        "image": "images/valiant.webp"
+    },
+    {
+        "name": "Knight Warden",
+        "type": "Character",
+        "limit": 3,
+        "cost": 450,
+        "image": "images/warden.webp"
+    },
+    {
+        "name": "Questoris Knight Magaera",
+        "type": "Character",
+        "limit": 3,
+        "cost": 425,
+        "image": "images/magaera.webp"
+    },
+    {
+        "name": "Questoris Knight Styrix",
+        "type": "Character",
+        "limit": 3,
+        "cost": 460,
+        "image": "images/styrix.webp"
+    },
+    {
+        "name": "Armiger Helverin",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 140,
+        "image": "images/helverin.webp"
+    },
+    {
+        "name": "Armiger Moirax",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 160,
+        "image": "images/moirax.webp"
+    },
+    {
+        "name": "Armiger Warglaive",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 150,
+        "image": "images/warglaive.webp"
+    },
+    {
+        "name": "Acastus Knight Asterius",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 765,
+        "image": "images/asterius.webp"
+    },
+    {
+        "name": "Acastus Knight Porphyrion",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 710,
+        "image": "images/porphyrion.webp"
+    }
+]
