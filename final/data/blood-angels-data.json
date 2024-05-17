@@ -1,0 +1,205 @@
+[
+    {
+        "name": "Apothicary",
+        "type": "Character",
+        "limit": 3,
+        "cost": 50,
+        "image": "images/apothicary.webp"
+    },
+    {
+        "name": "Captain",
+        "type": "Character",
+        "limit": 3,
+        "cost": 80,
+        "image": "images/captain.webp"
+    },
+    {
+        "name": "Captain in Terminator Armour",
+        "type": "Character",
+        "limit": 3,
+        "cost": 95,
+        "image": "images/captain-in-terminator-armour.webp"
+    },
+    {
+        "name": "Chaplain",
+        "type": "Character",
+        "limit": 3,
+        "cost": 60,
+        "image": "images/chaplain.webp"
+    },
+    {
+        "name": "Chaplain in Terminator Armour",
+        "type": "Character",
+        "limit": 3,
+        "cost": 75,
+        "image": "images/chaplain-in-terminator-armour.webp"
+    },
+    {
+        "name": "Librarian",
+        "type": "Character",
+        "limit": 3,
+        "cost": 65,
+        "image": "images/librarian.webp"
+    },
+    {
+        "name": "Librarian in Terminator Armour",
+        "type": "Character",
+        "limit": 3,
+        "cost": 75,
+        "image": "images/librarian-in-terminator-armour.webp"
+    },
+    {
+        "name": "Techmarine",
+        "type": "Character",
+        "limit": 3,
+        "cost": 55,
+        "image": "images/techmarine.webp"
+    },
+    {
+        "name": "Asault Intercessor Squad",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 75,
+        "image": "images/assault-intercessor.webp"
+    },
+    {
+        "name": "Heavy Intercessor Squad",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 100,
+        "image": "images/heavy-intercessor.webp"
+    },
+    {
+        "name": "Intercessor Squad",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 80,
+        "image": "images/intercessor.webp"
+    },
+    {
+        "name": "Tactical Squad",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 140,
+        "image": "images/tactical.webp"
+    },
+    {
+        "name": "Aggressor Squad",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 120,
+        "image": "images/aggressor.webp"
+    },
+    {
+        "name": "Bladeguard Veteran Squad",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 90,
+        "image": "images/bladeguard-veteran.webp"
+    },
+    {
+        "name": "Centurion Assault Squad",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 150,
+        "image": "images/centurion-assault.webp"
+    },
+    {
+        "name": "Centurion Devestator Squad",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 185,
+        "image": "images/centurion-devestator.webp"
+    },
+    {
+        "name": "Eliminator Squad",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 85,
+        "image": "images/eliminator.webp"
+    },
+    {
+        "name": "Infernus Squad",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 80,
+        "image": "images/infernus.webp"
+    },
+    {
+        "name": "Terminator Squad",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 120,
+        "image": "images/terminator.webp"
+    },
+    {
+        "name": "Outrider Squad",
+        "type": "Mounted",
+        "limit": 3,
+        "cost": 80,
+        "image": "images/outrider.webp"
+    },
+    {
+        "name": "Dreadnought",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 135,
+        "image": "images/dreadnought.webp"
+    },
+    {
+        "name": "Drop Pod",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 70,
+        "image": "images/drop-pod.webp"
+    },
+    {
+        "name": "Land Raider",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 240,
+        "image": "images/land-raider.webp"
+    },
+    {
+        "name": "Predator Annihilator",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/predator-annihilator.webp"
+    },
+    {
+        "name": "Predator Destructor",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/predator-destructor.webp"
+    },
+    {
+        "name": "Redemptor Dreadnought",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 210,
+        "image": "images/redemptor-dreadnought.webp"
+    },
+    {
+        "name": "Impulsor",
+        "type": "DedicatedTransport",
+        "limit": 6,
+        "cost": 80,
+        "image": "images/impulsor.webp"
+    },
+    {
+        "name": "Razorback",
+        "type": "DedicatedTransport",
+        "limit": 6,
+        "cost": 95,
+        "image": "images/razorback.webp"
+    },
+    {
+        "name": "Rhino",
+        "type": "DedicatedTransport",
+        "limit": 6,
+        "cost": 75,
+        "image": "images/rhino.webp"
+    }
+]
