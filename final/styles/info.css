@@ -1,0 +1,40 @@
+.container{
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.titleBox{
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.titleBox img{
+    height: 70px;
+    align-self: center;
+    filter: invert(100%) sepia(5%) saturate(309%) hue-rotate(304deg) brightness(116%) contrast(87%);
+}
+
+.titleBox p{
+    font-size: 36px;
+    align-self: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #eeeeee;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.infoBox{
+    font-size: 20px;
+    color: white;
+    height: 600px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.quote{
+    font-style: italic;
+}

@@ -41,62 +41,6 @@ main div p{
     margin-bottom: 0;
 }
 
-#divAC{
-    background-color: #FFD70055;
-}
-
-#divUM{
-    background-color: #0437F255;
-}
-
-#divDA{
-    background-color: #00522155;
-}
-
-#divBA{
-    background-color: #9a111555;
-}
-
-#divSW{
-    background-color: #4871a755;
-}
-
-#divIK{
-    background-color: #2d416455;
-}
-
-#divWE{
-    background-color: #f82a0e55;
-}
-
-#divDG{
-    background-color: #9db92c55;
-}
-
-#divTS{
-    background-color: #601EF955;
-}
-
-#divCK{
-    background-color: #8a8a8a55;
-}
-
-#divN{
-    background-color:  #92612f55;
-}
-
-.divLock img{
-    filter: invert(24%) sepia(25%) saturate(0%) hue-rotate(201deg) brightness(104%) contrast(100%);
-}
-
-/*.divLock a{
-    color: #444444;
-}*/
-
-.divLock{
-    background-color: #222222;
-}
-
 .divLock:hover{
     box-shadow: 0 0 20px 5px #555555;
 }
