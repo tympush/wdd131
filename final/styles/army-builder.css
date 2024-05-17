@@ -73,7 +73,7 @@ h3{
     overflow-y: scroll;
 }
 
-#userList div:not(:has(article)){
+#availableList div:not(:has(article)), #userList div:not(:has(article)){
     display: none;
 }
 
