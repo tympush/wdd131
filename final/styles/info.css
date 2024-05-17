@@ -30,7 +30,7 @@
 .infoBox{
     font-size: 20px;
     color: white;
-    height: 600px;
+    height: 400px;
     overflow: hidden;
     overflow-y: scroll;
 }

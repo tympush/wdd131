@@ -66,6 +66,12 @@ header nav a:hover{
     opacity: 1;
 }
 
+h1{
+    color: white;
+    font-size: 64px;
+    text-align: center;
+}
+
 main a{
     color: white;
 }
