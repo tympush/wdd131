@@ -1,5 +1,40 @@
 [
     {
+        "name": "Roboute Guilliman",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 350,
+        "image": "images/roboute-guilliman.webp"
+    },
+    {
+        "name": "Marneus Calgar",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 185,
+        "image": "images/marneus-calgar.webp"
+    },
+    {
+        "name": "Captain Sicarius",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 85,
+        "image": "images/captain-sicarius.webp"
+    },
+    {
+        "name": "Chief Librarian Tigurius",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 75,
+        "image": "images/chief-librarian-tigurius.webp"
+    },
+    {
+        "name": "Uriel Ventris",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 75,
+        "image": "images/uriel-ventris.webp"
+    },
+    {
         "name": "Apothicary",
         "type": "Character",
         "limit": 3,

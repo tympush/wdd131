@@ -1,5 +1,89 @@
 [
     {
+        "name": "Lion El'Jonson",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 300,
+        "image": "images/lion-el-jonson.webp"
+    },
+    {
+        "name": "Asmodai",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 70,
+        "image": "images/asmodai.webp"
+    },
+    {
+        "name": "Azrael",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 105,
+        "image": "images/azrael.webp"
+    },
+    {
+        "name": "Belial",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 85,
+        "image": "images/belial.webp"
+    },
+    {
+        "name": "Ezekiel",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 75,
+        "image": "images/ezekiel.webp"
+    },
+    {
+        "name": "Lazarus",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 70,
+        "image": "images/lazarus.webp"
+    },
+    {
+        "name": "Sammael",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 130,
+        "image": "images/sammael.webp"
+    },
+    {
+        "name": "Ravenwing Command Squad",
+        "type": "Character",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/ravenwing-command-squad.webp"
+    },
+    {
+        "name": "Deathwing Knights",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 215,
+        "image": "images/deathwing-knights.webp"
+    },
+    {
+        "name": "Deathwing Terminator Squad",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 180,
+        "image": "images/deathwing-terminator-squad.webp"
+    },
+    {
+        "name": "Inner Circle Companions",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 90,
+        "image": "images/inner-circle-companions.webp"
+    },
+    {
+        "name": "Ravenwing Black Knights",
+        "type": "Mounted",
+        "limit": 3,
+        "cost": 90,
+        "image": "images/ravenwing-black-knights.webp"
+    },
+    {
         "name": "Apothicary",
         "type": "Character",
         "limit": 3,

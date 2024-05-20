@@ -1,30 +1,36 @@
-#mainInfoContainer{
+.infoRow{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 350px 250px 1fr 250px 350px;
+    grid-template-rows: 870px;
+    margin-right: 40px;
+    margin-left: 40px;
+    position: relative;
+    place-items: center;
 }
 
-.container:nth-of-type(odd) {
-    grid-column: 1 / 2;
-}
-
-.container:nth-of-type(even) {
-    grid-column: 3 / 4;
-}
-
-#mainInfoContainer img:nth-of-type(odd) {
-    grid-column: 2 / 4;
-}
-
-#mainInfoContainer img:nth-of-type(even) {
+.infoRow:nth-of-type(odd) .infoText{
     grid-column: 1 / 3;
 }
 
+.infoRow:nth-of-type(even) .infoText{
+    grid-column: 4 / 6;
+}
+
+.infoRow:nth-of-type(odd) .infoImage{
+    grid-column: 2 / 6;
+}
+
+.infoRow:nth-of-type(even) .infoImage{
+    grid-column: 1 / 5;
+}
 
 
-.container{
-    width: 500px;
-    margin: 20px;
-    padding: 20px;
+
+.infoText{
+    width: 100%;
+    height: 570px;
+    z-index: 2;
+    position: relative;
 }
 
 .titleBox{
@@ -51,7 +57,7 @@
 .infoBox{
     font-size: 20px;
     color: white;
-    height: 400px;
+    height: 430px;
     overflow: hidden;
     overflow-y: scroll;
     padding-left: 20px;
@@ -60,4 +66,12 @@
 
 .quote{
     font-style: italic;
+}
+
+.infoImage{
+    width: 100%;
+    height: auto;
+    grid-column: 1/4;
+    z-index: 1;
+    position: absolute;
 }
