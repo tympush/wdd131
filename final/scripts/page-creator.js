@@ -14,7 +14,9 @@ document.querySelectorAll('.dynamicLink').forEach(link => {
         const titleColor = this.getAttribute('data-title-color');
         const iconColor = this.getAttribute('data-icon-color');
 
-        let newWindow = window.open('newpage.html');
+        let newWindow = window.open('', '_blank');
+
+        const customUrl = `${(title)}.html`;
 
         newWindow.document.write(`
             <!DOCTYPE html>
@@ -77,6 +79,8 @@ document.querySelectorAll('.dynamicLink').forEach(link => {
             </body>
             </html>
         `);
+
+        newWindow.history.pushState({}, '', customUrl);
 
         newWindow.document.close();
     });
