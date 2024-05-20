@@ -1,3 +1,26 @@
+#mainInfoContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container:nth-of-type(odd) {
+    grid-column: 1 / 2;
+}
+
+.container:nth-of-type(even) {
+    grid-column: 3 / 4;
+}
+
+#mainInfoContainer img:nth-of-type(odd) {
+    grid-column: 2 / 4;
+}
+
+#mainInfoContainer img:nth-of-type(even) {
+    grid-column: 1 / 3;
+}
+
+
+
 .container{
     width: 500px;
     margin: 20px;
