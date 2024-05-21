@@ -10,6 +10,14 @@
     .infoBox{
         font-size: 16px;
     }
+
+    .infoText{
+        height: 370px;
+    }
+
+    .infoBox{
+        height: 230px;
+    }
 }
 
 @media (min-width: 600px){
@@ -23,6 +31,14 @@
 
     .infoBox{
         font-size: 20px;
+    }
+
+    .infoText{
+        height: 470px;
+    }
+
+    .infoBox{
+        height: 330px;
     }
 }
 
@@ -42,14 +58,6 @@
     .infoImage{
         width: 100%;
         height: auto;
-    }
-
-    .infoText{
-        height: 470px;
-    }
-
-    .infoBox{
-        height: 330px;
     }
 }
 
