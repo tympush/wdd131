@@ -1,0 +1,212 @@
+[
+    {
+        "name": "Trajan Valoris",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 150,
+        "image": "images/trajan-valoris.webp"
+    },
+    {
+        "name": "Valerian",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 110,
+        "image": "images/valerian.webp"
+    },
+    {
+        "name": "Aleya",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 75,
+        "image": "images/aleya.webp"
+    },
+    {
+        "name": "Blade Champion",
+        "type": "Character",
+        "limit": 3,
+        "cost": 110,
+        "image": "images/blade-champion.webp"
+    },
+    {
+        "name": "Knight-Centura",
+        "type": "Character",
+        "limit": 3,
+        "cost": 70,
+        "image": "images/knight-centura.webp"
+    },
+    {
+        "name": "Shield-Captain",
+        "type": "Character",
+        "limit": 3,
+        "cost": 140,
+        "image": "images/shield-captain.webp"
+    },
+    {
+        "name": "Shield-Captain in Allarus Terminator Armour",
+        "type": "Character",
+        "limit": 3,
+        "cost": 140,
+        "image": "images/shield-captain-in-allarus-terminator-armour.webp"
+    },
+    {
+        "name": "Shield-Captain on Dawneagle Jetbike",
+        "type": "Character",
+        "limit": 3,
+        "cost": 140,
+        "image": "images/shield-captain-on-dawneagle-jetbike.webp"
+    },
+    {
+        "name": "Custodian Guard",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 180,
+        "image": "images/custodian-guard.webp"
+    },
+    {
+        "name": "Allarus Custodians",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/allarus-custodians.webp"
+    },
+    {
+        "name": "Aquilon Custodians",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 210,
+        "image": "images/aquilon-custodian.webp"
+    },
+    {
+        "name": "Custodian Wardens",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 200,
+        "image": "images/custodian-wardens.webp"
+    },
+    {
+        "name": "Prosecutors",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 40,
+        "image": "images/prosecutors.webp"
+    },
+    {
+        "name": "Sagittarum Custodians",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 225,
+        "image": "images/sagittarum-custodians.webp"
+    },
+    {
+        "name": "Venatari Custodians",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 200,
+        "image": "images/venatari-custodians.webp"
+    },
+    {
+        "name": "Vigilators",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 50,
+        "image": "images/vigilators.webp"
+    },
+    {
+        "name": "Witchseekers",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 50,
+        "image": "images/witchseekers.webp"
+    },
+    {
+        "name": "Agamatus Custodians",
+        "type": "Mounted",
+        "limit": 3,
+        "cost": 240,
+        "image": "images/agamatus-custodians.webp"
+    },
+    {
+        "name": "Vertus Praetors",
+        "type": "Mounted",
+        "limit": 3,
+        "cost": 150,
+        "image": "images/vertus-praetors.webp"
+    },
+    {
+        "name": "Ares Gunship",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 580,
+        "image": "images/ares-gunship.webp"
+    },
+    {
+        "name": "Caladius Grav-tank",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 215,
+        "image": "images/caladius-grav-tank.webp"
+    },
+    {
+        "name": "Contemptor-Achillus Dreadnought",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 165,
+        "image": "images/contemptor-achillus-dreadnought.webp"
+    },
+    {
+        "name": "Contemptor-Galatus Dreadnought",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 175,
+        "image": "images/contemptor-galatus-dreadnought.webp"
+    },
+    {
+        "name": "Cornus Grav-carrier",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 200,
+        "image": "images/cornus-grav-carrier.webp"
+    },
+    {
+        "name": "Orion Assault Dropship",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 690,
+        "image": "images/orion-assault-dropship.webp"
+    },
+    {
+        "name": "Pallas Grav-attack",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 120,
+        "image": "images/pallas-grav-attack.webp"
+    },
+    {
+        "name": "Telemon Heavy Dreadnought",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 235,
+        "image": "images/telemon-heavy-dreadnought.webp"
+    },
+    {
+        "name": "Venerable Contemptor Dreadnought",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 170,
+        "image": "images/venerable-contemptor-dreadnought.webp"
+    },
+    {
+        "name": "Venerable Land Raider",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 240,
+        "image": "images/venerable-land-raider.webp"
+    },
+    {
+        "name": "Anathema Psykana Rhino",
+        "type": "DedicatedTransport",
+        "limit": 6,
+        "cost": 75,
+        "image": "images/anathema-psykana-rhino.webp"
+    }
+]
