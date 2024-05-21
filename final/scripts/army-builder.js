@@ -142,16 +142,17 @@ const findUserUnit = (unit) => {
 const changeBoxRed = (unit) => {
     const availableUnitArticle = findAvailableUnitArticle(unit);
     if (availableUnitArticle) {
-        availableUnitArticle.style.backgroundColor = `red`;
+        availableUnitArticle.style.opacity = '0.35';
     }
 };
 
 const changeBoxGrey = (unit) => {
     const availableUnitArticle = findAvailableUnitArticle(unit);
     if (availableUnitArticle) {
-        availableUnitArticle.style.backgroundColor = `#222`;
+        availableUnitArticle.style.opacity = '1';
     }
 };
+
 
 const findAvailableUnitArticle = (unit) => {
     const unitArticles = availableUnitsList.querySelectorAll(`article`);
@@ -195,3 +196,17 @@ document.addEventListener("DOMContentLoaded", () => {
         userListFrame.style.display = "block";
     });
 });
+
+
+const addButton = document.getElementById('addButton');
+const myButton = document.getElementById('myButton');
+
+function highlightButton(event) {
+    addButton.classList.remove('highlight');
+    myButton.classList.remove('highlight');
+
+    event.target.classList.add('highlight');
+}
+
+addButton.addEventListener('click', highlightButton);
+myButton.addEventListener('click', highlightButton);

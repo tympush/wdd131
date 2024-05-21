@@ -42,7 +42,7 @@ document.querySelectorAll('.dynamicLink').forEach(link => {
                     <div id="container">
 
 
-                        <button type="button" id="addButton">Add Units</button>
+                        <button type="button" id="addButton" class="highlight">Add Units</button>
                         <button type="button" id="myButton">My List</button>
 
 
