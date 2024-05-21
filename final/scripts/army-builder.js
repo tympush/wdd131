@@ -165,3 +165,33 @@ const findAvailableUnitArticle = (unit) => {
 };
 
 getData();
+
+document.addEventListener("DOMContentLoaded", () => {
+    const availableListFrame = document.querySelector("#availableListFrame");
+    const userListFrame = document.querySelector("#userListFrame");
+    const addButton = document.querySelector("#addButton");
+    const myButton = document.querySelector("#myButton");
+
+    const updateVisibility = () => {
+        if (window.innerWidth < 1200) {
+            availableListFrame.style.display = "block";
+            userListFrame.style.display = "none";
+        } else {
+            availableListFrame.style.display = "block";
+            userListFrame.style.display = "block";
+        }
+    };
+
+    window.addEventListener("resize", updateVisibility);
+    updateVisibility();
+
+    addButton.addEventListener("click", () => {
+        availableListFrame.style.display = "block";
+        userListFrame.style.display = "none";
+    });
+
+    myButton.addEventListener("click", () => {
+        availableListFrame.style.display = "none";
+        userListFrame.style.display = "block";
+    });
+});

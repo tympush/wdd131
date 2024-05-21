@@ -40,6 +40,12 @@ document.querySelectorAll('.dynamicLink').forEach(link => {
             
                 <main>
                     <div id="container">
+
+
+                        <button type="button" id="addButton">Add Units</button>
+                        <button type="button" id="myButton">My List</button>
+
+
                         <div id="availableListFrame">
                             <h2>Units</h2>
                             <p id="numberOfUnits">Units Available: 0</p>
