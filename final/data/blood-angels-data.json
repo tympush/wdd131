@@ -1,5 +1,110 @@
 [
     {
+        "name": "Commander Dante",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 120,
+        "image": "images/dante.webp"
+    },
+    {
+        "name": "Chief Librarian Mephiston",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 100,
+        "image": "images/mephiston.webp"
+    },
+    {
+        "name": "The Sanguinor",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 140,
+        "image": "images/sanguinor.webp"
+    },
+    {
+        "name": "Gabriel Seth",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 90,
+        "image": "images/gabriel-seth.webp"
+    },
+    {
+        "name": "Astorath",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 85,
+        "image": "images/astorath.webp"
+    },
+    {
+        "name": "Brother Corbulo",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 75,
+        "image": "images/brother-corbulo.webp"
+    },
+    {
+        "name": "Lemartes",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 120,
+        "image": "images/lemartes.webp"
+    },
+    {
+        "name": "Captain Tycho",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 75,
+        "image": "images/captain-tycho.webp"
+    },
+    {
+        "name": "Tycho the Lost",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 90,
+        "image": "images/tycho-the-lost.webp"
+    },
+    {
+        "name": "Sanguinary Priest",
+        "type": "Character",
+        "limit": 3,
+        "cost": 90,
+        "image": "images/sanguinary-priest.webp"
+    },
+    {
+        "name": "Sanguinary Priest with Jump Pack",
+        "type": "Character",
+        "limit": 3,
+        "cost": 100,
+        "image": "images/sanguinary-priest-with-jump-pack.webp"
+    },
+    {
+        "name": "Death Company Intercessors",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 75,
+        "image": "images/death-company-intercessors.webp"
+    },
+    {
+        "name": "Death Company Marines",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 125,
+        "image": "images/death-company.webp"
+    },
+    {
+        "name": "Death Company Marines with Jump Packs",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 140,
+        "image": "images/death-company-with-jump-packs.webp"
+    },
+    {
+        "name": "Sanguinary Guard",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 155,
+        "image": "images/sanguinary-guard.webp"
+    },
+    {
         "name": "Apothicary",
         "type": "Character",
         "limit": 3,

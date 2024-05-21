@@ -1,5 +1,229 @@
 [
     {
+        "name": "Logan Grimnar",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 100,
+        "image": "images/logan.webp"
+    },
+    {
+        "name": "Logan Grimnar on Stormrider",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 180,
+        "image": "images/logan-on-stormrider.webp"
+    },
+    {
+        "name": "Bjorn the Fell-Handed",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 180,
+        "image": "images/bjorn.webp"
+    },
+    {
+        "name": "Arjac Rockfist",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 95,
+        "image": "images/arjac.webp"
+    },
+    {
+        "name": "Canis Wolfborn",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 75,
+        "image": "images/canis.webp"
+    },
+    {
+        "name": "Herald Deathwolf",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 85,
+        "image": "images/herald-deathwolf.webp"
+    },
+    {
+        "name": "Krom Dragongaze",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 65,
+        "image": "images/krom.webp"
+    },
+    {
+        "name": "Lukas the Trickster",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 50,
+        "image": "images/lukas.webp"
+    },
+    {
+        "name": "Murderfang",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 170,
+        "image": "images/murderfang.webp"
+    },
+    {
+        "name": "Njal Stormcaller",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 85,
+        "image": "images/njal.webp"
+    },
+    {
+        "name": "Ragnar Blackmane",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 90,
+        "image": "images/ragnar.webp"
+    },
+    {
+        "name": "Ulric the Slayer",
+        "type": "EpicHero",
+        "limit": 1,
+        "cost": 70,
+        "image": "images/ulric.webp"
+    },
+    {
+        "name": "Wolf Guard Battle Leader in Terminator Armour",
+        "type": "Character",
+        "limit": 3,
+        "cost": 75,
+        "image": "images/wg-battle-leader-in-terminator-armour.webp"
+    },
+    {
+        "name": "Wolf Guard Battle Leader on Thunderwolf",
+        "type": "Character",
+        "limit": 3,
+        "cost": 80,
+        "image": "images/wg-battle-leader-on-thunderwolf.webp"
+    },
+    {
+        "name": "Wolf Guard Pack Leader",
+        "type": "Character",
+        "limit": 3,
+        "cost": 30,
+        "image": "images/wg-pack-leader.webp"
+    },
+    {
+        "name": "Wolf Guard Pack Leader in Terminator Armour",
+        "type": "Character",
+        "limit": 3,
+        "cost": 40,
+        "image": "images/wg-pack-leader-in-terminator-armour.webp"
+    },
+    {
+        "name": "Wolf Guard Pack Leader with Jump Pack",
+        "type": "Character",
+        "limit": 3,
+        "cost": 35,
+        "image": "images/wg-pack-leader-with-jump-pack.webp"
+    },
+    {
+        "name": "Wolf Lord on Thunderwolf",
+        "type": "Character",
+        "limit": 3,
+        "cost": 100,
+        "image": "images/wolf-lord-on-thunderwolf.webp"
+    },
+    {
+        "name": "Cyberwolf",
+        "type": "Character",
+        "limit": 3,
+        "cost": 20,
+        "image": "images/cyberwolf.webp"
+    },
+    {
+        "name": "Blood Claws",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 140,
+        "image": "images/blood-claws.webp"
+    },
+    {
+        "name": "Grey Hunters",
+        "type": "Battleline",
+        "limit": 6,
+        "cost": 85,
+        "image": "images/grey-hunters.webp"
+    },
+    {
+        "name": "Hounds of Morkai",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 90,
+        "image": "images/hounds-of-morkai.webp"
+    },
+    {
+        "name": "Long Fangs",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 140,
+        "image": "images/long-fangs.webp"
+    },
+    {
+        "name": "Skyclaws",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 90,
+        "image": "images/skyclaws.webp"
+    },
+    {
+        "name": "Wolf Guard",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 95,
+        "image": "images/wolf-guard.webp"
+    },
+    {
+        "name": "Wolf Guard Terminators",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 185,
+        "image": "images/wolf-guard-terminators.webp"
+    },
+    {
+        "name": "Wolf Scouts",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 75,
+        "image": "images/wolf-scouts.webp"
+    },
+    {
+        "name": "Wulfen",
+        "type": "Infantry",
+        "limit": 3,
+        "cost": 80,
+        "image": "images/wulfen.webp"
+    },
+    {
+        "name": "Fenrisian Wolves",
+        "type": "Beast",
+        "limit": 3,
+        "cost": 30,
+        "image": "images/fenrisian-wolves.webp"
+    },
+    {
+        "name": "Space Wolves Venerable Dreadnought",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 155,
+        "image": "images/space-wolves-dreadnought.webp"
+    },
+    {
+        "name": "Stormwolf",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 250,
+        "image": "images/stormwolf.webp"
+    },
+    {
+        "name": "Wulfen Dreadnought",
+        "type": "Vehicle",
+        "limit": 3,
+        "cost": 130,
+        "image": "images/wulfen-dreadnought.webp"
+    },
+    {
         "name": "Apothicary",
         "type": "Character",
         "limit": 3,
