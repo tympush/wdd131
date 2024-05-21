@@ -12,6 +12,51 @@ p{
     --box-color: #222;
 }
 
+@media (max-width: 500px){
+    h1{
+        font-size: 44px;
+    }
+
+    button{
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 12px;
+    }
+
+    header img{
+        display: none;
+    }
+
+    main img{
+        width: 80px;
+    }
+}
+
+@media (min-width: 500px){
+    header{
+        clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px));
+    }
+
+    button{
+        font-size: 36px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    header img{
+        width: 70px;
+        filter: invert(96%) sepia(100%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
+    }
+
+    main img{
+        width: 100px;
+    }
+}
+
 @media (max-width: 1200px){
     #addButton{
         margin-bottom: 10px;
@@ -23,7 +68,6 @@ p{
 
     button{
         font-family: "M PLUS Rounded 1c";
-        font-size: 36px;
         background-color: #ddd;
         border-radius: 20px;
         width: 250px;
@@ -39,6 +83,32 @@ p{
     #availableListFrame, #userListFrame{
         grid-column: 1/3;
     }
+
+    #availableList, #userList{
+        height: 430px;
+        overflow: hidden;
+        overflow-y: scroll;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* For WebKit-based browsers (Chrome, Safari) */
+    #availableList::-webkit-scrollbar,
+    #userList::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* For Firefox */
+    #availableList,
+    #userList {
+        scrollbar-width: none; /* Firefox */
+    }
+
+    /* For Internet Explorer and Edge (Legacy) */
+    #availableList,
+    #userList {
+        -ms-overflow-style: none; /* IE and Edge */
+    }
 }
 
 @media (min-width: 1200px){
@@ -50,6 +120,43 @@ p{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
+    }
+
+    #availableList, #userList{
+        height: 530px;
+        overflow: hidden;
+        overflow-y: scroll;
+        padding-left: 57px;
+        padding-right: 45px;
+    }
+
+    /* For Webkit-based browsers */
+    #availableList::-webkit-scrollbar,
+    #userList::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    #availableList::-webkit-scrollbar-track,
+    #userList::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    #availableList::-webkit-scrollbar-thumb,
+    #userList::-webkit-scrollbar-thumb {
+        background: var(--box-color);
+        border-radius: 6px;
+    }
+
+    #availableList::-webkit-scrollbar-thumb:hover,
+    #userList::-webkit-scrollbar-thumb:hover {
+        background: #111;
+    }
+
+    /* For Firefox */
+    #availableList,
+    #userList {
+        scrollbar-width: thin;
+        scrollbar-color: var(--box-color);
     }
 }
 
@@ -74,12 +181,6 @@ header{
     padding-left: 40px;
     padding-right: 40px;
     display: flex;
-    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px));
-}
-
-header img{
-    width: 70px;
-    filter: invert(96%) sepia(100%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
 }
 
 h1{
@@ -116,7 +217,6 @@ h3{
 
 h4{
     color: white;
-    font-size: 20px;
 }
 
 #availableListFrame, #userListFrame{
@@ -127,49 +227,11 @@ h4{
     flex-direction: column;
 }
 
-#availableList, #userList{
-    height: 530px;
-    overflow: hidden;
-    overflow-y: scroll;
-    padding-left: 57px;
-    padding-right: 45px;
-}
-
-/* For Webkit-based browsers */
-#availableList::-webkit-scrollbar,
-#userList::-webkit-scrollbar {
-    width: 12px;
-}
-
-#availableList::-webkit-scrollbar-track,
-#userList::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-#availableList::-webkit-scrollbar-thumb,
-#userList::-webkit-scrollbar-thumb {
-    background: var(--box-color);
-    border-radius: 6px;
-}
-
-#availableList::-webkit-scrollbar-thumb:hover,
-#userList::-webkit-scrollbar-thumb:hover {
-    background: #111;
-}
-
-/* For Firefox */
-#availableList,
-#userList {
-    scrollbar-width: thin;
-    scrollbar-color: var(--box-color);
-}
-
 #availableList div:not(:has(article)), #userList div:not(:has(article)){
     display: none;
 }
 
 main img{
-    width: 100px;
     border-radius: 10px 0 0 10px;
 }
 

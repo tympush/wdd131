@@ -5,6 +5,7 @@ const numberOfUnitsDisplay = document.querySelector(`#numberOfUnits`);
 let unitsData = [];
 let totalCost = 0;
 let numUnits = 0;
+let userUnitsCount = 0;
 
 const getData = async () => {
     const response = await fetch((document.querySelector("#fileDirectory")).value);
@@ -57,6 +58,9 @@ const addUserUnit = (unit) => {
             totalCost += unit.cost;
             totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
 
+            userUnitsCount++;
+            document.querySelector('#myButton span').textContent = userUnitsCount;
+
             if (existingUnit.value == unit.limit) {
                 changeBoxRed(unit);
                 existingUnit.article.querySelector('h4:nth-child(3)').style.color = 'green';
@@ -74,7 +78,7 @@ const addUserUnit = (unit) => {
         img.alt = unit.name;
 
         const h4count = document.createElement(`h4`);
-        h4count.textContent = `1/${unit.limit}`
+        h4count.textContent = `1/${unit.limit}`;
         h4count.id = `count`;
         article.value = 1;
 
@@ -96,6 +100,9 @@ const addUserUnit = (unit) => {
                 totalCost -= unit.cost;
                 totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
 
+                userUnitsCount--;
+                document.querySelector('#myButton span').textContent = userUnitsCount;
+
                 if (existingUnit.value < unit.limit) {
                     existingUnit.article.querySelector('h4:nth-child(3)').style.color = '';
                     findAvailableUnitArticle(unit).classList.remove('disabled');
@@ -104,6 +111,10 @@ const addUserUnit = (unit) => {
                 existingUnit.article.remove();
                 totalCost -= unit.cost;
                 totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
+
+                userUnitsCount--;
+                document.querySelector('#myButton span').textContent = userUnitsCount;
+
                 findAvailableUnitArticle(unit).classList.remove('disabled');
             }
 
@@ -115,6 +126,9 @@ const addUserUnit = (unit) => {
         totalCost += unit.cost;
         totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
 
+        userUnitsCount++;
+        document.querySelector('#myButton span').textContent = userUnitsCount;
+
         if (unit.limit === 1) {
             changeBoxRed(unit);
             article.querySelector('h4:nth-child(3)').style.color = 'green';
@@ -122,6 +136,7 @@ const addUserUnit = (unit) => {
         }
     }
 }
+
 
 
 

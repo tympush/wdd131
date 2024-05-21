@@ -12,7 +12,6 @@ document.querySelectorAll('.dynamicLink').forEach(link => {
 
         const title = this.getAttribute('data-title');
         const titleColor = this.getAttribute('data-title-color');
-        const iconColor = this.getAttribute('data-icon-color');
 
         let newWindow = window.open('', '_blank');
 
@@ -29,6 +28,7 @@ document.querySelectorAll('.dynamicLink').forEach(link => {
                 <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Final Project - Warhammer 40,000 Army Builder - ${formatString(title)} - Tymur Pushnoy">
                 <link rel="stylesheet" href="styles/army-builder.css">
                 <script src="scripts/army-builder.js" defer></script>
+                <script src="scripts/page-creator.js" defer></script>
                 <input type="hidden" id="fileDirectory" value="data/${title}-data.json">
             </head>
             <body>
@@ -43,7 +43,7 @@ document.querySelectorAll('.dynamicLink').forEach(link => {
 
 
                         <button type="button" id="addButton" class="highlight">Add Units</button>
-                        <button type="button" id="myButton">My List</button>
+                        <button type="button" id="myButton">My List (<span>0</span>)</button>
 
 
                         <div id="availableListFrame">
