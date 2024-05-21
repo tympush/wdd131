@@ -278,6 +278,13 @@ article{
     padding-right: 20px;
 }
 
+article, button, button span{
+    user-select: none; /* Standard */
+    -webkit-user-select: none; /* WebKit (Chrome, Safari) */
+    -moz-user-select: none; /* Mozilla Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
 article h3, article h4{
     margin-right: 10px;
     margin-left: 10px;

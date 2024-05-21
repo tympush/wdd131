@@ -59,7 +59,7 @@ const addUserUnit = (unit) => {
             totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
 
             userUnitsCount++;
-            document.querySelector('#myButton span').textContent = userUnitsCount;
+            document.querySelector('#myButton').textContent = `My List (${userUnitsCount})`;
 
             if (existingUnit.value == unit.limit) {
                 changeBoxRed(unit);
@@ -101,7 +101,7 @@ const addUserUnit = (unit) => {
                 totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
 
                 userUnitsCount--;
-                document.querySelector('#myButton span').textContent = userUnitsCount;
+                document.querySelector('#myButton').textContent = `My List (${userUnitsCount})`;
 
                 if (existingUnit.value < unit.limit) {
                     existingUnit.article.querySelector('h4:nth-child(3)').style.color = '';
@@ -113,7 +113,7 @@ const addUserUnit = (unit) => {
                 totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
 
                 userUnitsCount--;
-                document.querySelector('#myButton span').textContent = userUnitsCount;
+                document.querySelector('#myButton').textContent = `My List (${userUnitsCount})`;
 
                 findAvailableUnitArticle(unit).classList.remove('disabled');
             }
@@ -127,7 +127,7 @@ const addUserUnit = (unit) => {
         totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
 
         userUnitsCount++;
-        document.querySelector('#myButton span').textContent = userUnitsCount;
+        document.querySelector('#myButton').textContent = `My List (${userUnitsCount})`;
 
         if (unit.limit === 1) {
             changeBoxRed(unit);

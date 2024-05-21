@@ -43,7 +43,7 @@ document.querySelectorAll('.dynamicLink').forEach(link => {
 
 
                         <button type="button" id="addButton" class="highlight">Add Units</button>
-                        <button type="button" id="myButton">My List (<span>0</span>)</button>
+                        <button type="button" id="myButton">My List (0)</button>
 
 
                         <div id="availableListFrame">
