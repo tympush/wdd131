@@ -1,76 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+h2, h3{
+    font-family: "Roboto";
+}
+
+p{
+    font-family: "M PLUS Rounded 1c";
+}
+
+:root{
+    --box-color: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #111;
+    background-color: #121212;
     padding: 0;
     margin: 0;
 }
 
 header{
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
     display: flex;
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px));
 }
 
 header img{
     width: 70px;
-}
-
-#headerWE{
-    color: #dd0000;
-}
-
-#headerWE img{
-    filter: invert(13%) sepia(68%) saturate(6888%) hue-rotate(358deg) brightness(84%) contrast(117%);
-}
-
-#headerDG{
-    color: #00dd00;
-}
-
-#headerDG img{
-    filter: invert(41%) sepia(80%) saturate(1330%) hue-rotate(88deg) brightness(115%) contrast(113%);
-}
-
-#headerTS{
-    color: #0000dd;
-}
-
-#headerTS img{
-    filter: invert(13%) sepia(100%) saturate(4578%) hue-rotate(240deg) brightness(77%) contrast(134%);
+    filter: invert(96%) sepia(100%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
 }
 
 h1{
     margin-top: 20px;
-    text-shadow: 0 0 5px gold;
     padding: 20px;
-    font-size: 48px;
-}
-
-h2{
-    font-size: 30px;
+    font-size: 52px;
     color: white;
 }
 
+h2{
+    font-size: 48px;
+    color: white;
+    background-color: #121212;
+}
+
+#totalCost, #numberOfUnits{
+    color: white;
+    padding-bottom: 30px;
+    font-size: 26px;
+    background-color: #121212;
+}
+
 h3{
+    color: white;
+    background-color: #121212;
+    border-bottom: 1px solid white;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+h4{
     color: white;
 }
 
 #container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 50px;
 }
 
 #availableListFrame, #userListFrame{
     padding: 20px;
-    border: 3px solid gold;
+    border-radius: 20px;
+    border: 7px solid var(--box-color);
 }
 
 #availableList, #userList{
-    height: 600px;
+    height: 530px;
     overflow: hidden;
     overflow-y: scroll;
+    padding-left: 42px;
+    padding-right: 30px;
+}
+
+/* For Webkit-based browsers */
+#availableList::-webkit-scrollbar,
+#userList::-webkit-scrollbar {
+    width: 12px;
+}
+
+#availableList::-webkit-scrollbar-track,
+#userList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#availableList::-webkit-scrollbar-thumb,
+#userList::-webkit-scrollbar-thumb {
+    background: var(--box-color);
+    border-radius: 6px;
+}
+
+#availableList::-webkit-scrollbar-thumb:hover,
+#userList::-webkit-scrollbar-thumb:hover {
+    background: #111;
+}
+
+/* For Firefox */
+#availableList,
+#userList {
+    scrollbar-width: thin;
+    scrollbar-color: var(--box-color);
 }
 
 #availableList div:not(:has(article)), #userList div:not(:has(article)){
@@ -86,7 +139,7 @@ article{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #bbbbbb;
+    background-color: var(--box-color);
     padding: 10px;
     margin-top: 10px;
     border-radius: 10px;

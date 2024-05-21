@@ -32,16 +32,17 @@ document.querySelectorAll('.dynamicLink').forEach(link => {
                 <input type="hidden" id="fileDirectory" value="data/${title}-data.json">
             </head>
             <body>
-                <header id="headerWE">
-                    <img style="${iconColor}" src="images/${title}-icon.svg" alt="">
-                    <h1 style="color: ${titleColor};">${(formatString(title)).toUpperCase()}</h1>
-                    <img style="${iconColor}" src="images/${title}-icon.svg" alt="">
+                <header style="background-color: ${titleColor};">
+                    <img src="images/${title}-icon.svg" alt="">
+                    <h1>${(formatString(title)).toUpperCase()}</h1>
+                    <img src="images/${title}-icon.svg" alt="">
                 </header>
             
                 <main>
                     <div id="container">
                         <div id="availableListFrame">
                             <h2>Units</h2>
+                            <p id="numberOfUnits">Units Available: 0</p>
                             <div id="availableList">
                                 <div id="EpicHero"><h3>Epic Hero</h3></div>
                                 <div id="Character"><h3>Character</h3></div>

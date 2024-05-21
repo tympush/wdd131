@@ -1,8 +1,10 @@
 const availableUnitsList = document.querySelector(`#availableList`);
 const userUnitsList = document.querySelector(`#userList`);
 const totalCostDisplay = document.querySelector(`#totalCost`);
+const numberOfUnitsDisplay = document.querySelector(`#numberOfUnits`);
 let unitsData = [];
 let totalCost = 0;
+let numUnits = 0;
 
 
 
@@ -18,9 +20,11 @@ const getData = async () => {
 const displayUnits = (units) => {
     units.forEach(unit => {
 
+        numUnits += 1;
+
         const article = document.createElement(`article`);
 
-        const h3name = document.createElement(`h3`);
+        const h3name = document.createElement(`h4`);
         h3name.textContent = unit.name;
 
         const img = document.createElement(`img`);
@@ -50,6 +54,8 @@ const displayUnits = (units) => {
         document.querySelector(`#${unit.type}`).appendChild(article);
 
     });
+
+    numberOfUnitsDisplay.textContent = `Units Available: ${numUnits}`;
 };
 
 
@@ -76,7 +82,7 @@ const addUserUnit = (unit) => {
 
         const article = document.createElement(`article`);
 
-        const h3name = document.createElement(`h3`);
+        const h3name = document.createElement(`h4`);
         h3name.textContent = unit.name;
 
         const img = document.createElement(`img`);
@@ -138,7 +144,7 @@ const addUserUnit = (unit) => {
 const findUserUnit = (unit) => {
     const unitArticles = userUnitsList.querySelectorAll(`article`);
     for (const unitArticle of unitArticles) {
-        const nameElement = unitArticle.querySelector(`h3`);
+        const nameElement = unitArticle.querySelector(`h4`);
         if (nameElement.textContent === unit.name) {
             return {
                 article: unitArticle,
@@ -165,14 +171,14 @@ const changeBoxGrey = (unit) => {
     const availableUnitArticle = findAvailableUnitArticle(unit);
 
     if (availableUnitArticle) {
-        availableUnitArticle.style.backgroundColor = `#bbbbbb`;
+        availableUnitArticle.style.backgroundColor = `#222`;
     }
 };
 
 const findAvailableUnitArticle = (unit) => {
     const unitArticles = availableUnitsList.querySelectorAll(`article`);
     for (const unitArticle of unitArticles) {
-        const nameElement = unitArticle.querySelector(`h3`);
+        const nameElement = unitArticle.querySelector(`h4`);
         if (nameElement.textContent === unit.name) {
             return unitArticle;
         }
