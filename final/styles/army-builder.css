@@ -109,6 +109,18 @@ p{
     #userList {
         -ms-overflow-style: none; /* IE and Edge */
     }
+
+    #availableList article:hover{
+        box-shadow: 0 0 15px green;
+    }
+    
+    #availableList article.disabled:hover{
+        box-shadow: none;
+    }
+    
+    #userList article:hover{
+        box-shadow: 0 0 15px red;
+    }
 }
 
 @media (min-width: 1200px){
@@ -157,6 +169,21 @@ p{
     #userList {
         scrollbar-width: thin;
         scrollbar-color: var(--box-color);
+    }
+
+    #availableList article:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 15px green;
+    }
+    
+    #availableList article.disabled:hover{
+        transform: none;
+        box-shadow: none;
+    }
+    
+    #userList article:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 15px red;
     }
 }
 
@@ -244,21 +271,6 @@ article{
     border-radius: 10px;
     transition: transform 0.3s ease;
     padding-right: 20px;
-}
-
-#availableList article:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 15px green;
-}
-
-#availableList article.disabled:hover{
-    transform: none;
-    box-shadow: none;
-}
-
-#userList article:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 15px red;
 }
 
 article h3, article h4{
