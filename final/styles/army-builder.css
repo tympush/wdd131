@@ -29,8 +29,8 @@ p{
 
     header{
         width: 100%;
-        margin: 0;  /* Remove margins to ensure full width */
-        padding-left: 10px;  /* Adjust padding to fit your needs */
+        margin: 0;
+        padding-left: 10px;
         padding-right: 10px;
         align-items: center;
         justify-content: center;
