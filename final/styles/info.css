@@ -1,30 +1,85 @@
-.infoRow{
-    display: grid;
-    grid-template-columns: 350px 250px 1fr 250px 350px;
-    grid-template-rows: 870px;
-    margin-right: 40px;
-    margin-left: 40px;
-    position: relative;
-    place-items: center;
+@media (max-width: 600px){
+    .titleBox img{
+        height: 40px;
+    }
+
+    .titleBox p{
+        font-size: 24px;
+    }
+
+    .infoBox{
+        font-size: 16px;
+    }
 }
 
-.infoRow:nth-of-type(odd) .infoText{
-    grid-column: 1 / 3;
+@media (min-width: 600px){
+    .titleBox img{
+        height: 70px;
+    }
+
+    .titleBox p{
+        font-size: 36px;
+    }
+
+    .infoBox{
+        font-size: 20px;
+    }
 }
 
-.infoRow:nth-of-type(even) .infoText{
-    grid-column: 4 / 6;
+@media (max-width: 1300px){
+    .infoRow{
+        margin: 0 auto 80px;
+        max-width: 750px;
+        display: block;
+        width: calc(100% - 60px);
+    }
+    
+    .infoRow{
+        display: block;
+        width: calc(100% - 60px);
+    }
+
+    .infoImage{
+        width: 100%;
+        height: auto;
+    }
 }
 
-.infoRow:nth-of-type(odd) .infoImage{
-    grid-column: 2 / 6;
+@media (min-width: 1300px){
+    .infoRow{
+        display: grid;
+        grid-template-columns: 350px 250px 1fr 250px 350px;
+        grid-template-rows: 870px;
+        margin-right: 40px;
+        margin-left: 40px;
+        position: relative;
+        place-items: center;
+    }
+    
+    .infoRow:nth-of-type(odd) .infoText{
+        grid-column: 1 / 3;
+    }
+    
+    .infoRow:nth-of-type(even) .infoText{
+        grid-column: 4 / 6;
+    }
+    
+    .infoRow:nth-of-type(odd) .infoImage{
+        grid-column: 2 / 6;
+    }
+    
+    .infoRow:nth-of-type(even) .infoImage{
+        grid-column: 1 / 5;
+    }
+
+    .infoImage{
+        width: 100%;
+        height: auto;
+        grid-column: 1/4;
+        z-index: 1;
+        position: absolute;
+    }
 }
-
-.infoRow:nth-of-type(even) .infoImage{
-    grid-column: 1 / 5;
-}
-
-
 
 .infoText{
     width: 100%;
@@ -38,16 +93,17 @@
     justify-content: center;
     border-radius: 15px;
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .titleBox img{
-    height: 70px;
     align-self: center;
     filter: invert(100%) sepia(5%) saturate(309%) hue-rotate(304deg) brightness(116%) contrast(87%);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .titleBox p{
-    font-size: 36px;
     align-self: center;
     margin-left: 20px;
     margin-right: 20px;
@@ -55,7 +111,6 @@
 }
 
 .infoBox{
-    font-size: 20px;
     color: white;
     height: 430px;
     overflow: hidden;
@@ -64,14 +119,30 @@
     padding-right: 20px;
 }
 
-.quote{
-    font-style: italic;
+/* For Webkit-based browsers */
+.infoBox::-webkit-scrollbar{
+    width: 12px;
 }
 
-.infoImage{
-    width: 100%;
-    height: auto;
-    grid-column: 1/4;
-    z-index: 1;
-    position: absolute;
+.infoBox::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+.infoBox::-webkit-scrollbar-thumb{
+    background: var(--box-color);
+    border-radius: 6px;
+}
+
+.infoBox::-webkit-scrollbar-thumb:hover{
+    background: #111;
+}
+
+/* For Firefox */
+.infoBox{
+    scrollbar-width: thin;
+    scrollbar-color: var(--box-color);
+}
+
+.quote{
+    font-style: italic;
 }
