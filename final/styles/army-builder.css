@@ -12,22 +12,32 @@ p{
     --box-color: #222;
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
     h1{
-        font-size: 40px;
+        font-size: 36px;
         padding: 10px;
     }
 
     button{
-        font-size: 30px;
+        font-size: 24px;
+        border-radius: 16px;
     }
 
     h4{
         font-size: 12px;
     }
 
+    header{
+        width: 100%;
+        margin: 0;  /* Remove margins to ensure full width */
+        padding-left: 10px;  /* Adjust padding to fit your needs */
+        padding-right: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
     header img{
-        width: 40px;
+        width: 36px;
         filter: invert(96%) sepia(100%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
     }
 
@@ -36,18 +46,19 @@ p{
     }
 }
 
-@media (min-width: 500px){
+@media (min-width: 600px){
     header{
         clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px));
     }
 
     h1{
-        font-size: 52px;
+        font-size: 48px;
         padding: 20px;
     }
 
     button{
         font-size: 36px;
+        border-radius: 20px;
     }
 
     h4{
@@ -55,7 +66,7 @@ p{
     }
 
     header img{
-        width: 70px;
+        width: 60px;
         filter: invert(96%) sepia(100%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
     }
 
@@ -76,7 +87,6 @@ p{
     button{
         font-family: "M PLUS Rounded 1c";
         background-color: #ddd;
-        border-radius: 20px;
         width: 250px;
         margin-left: 10px;
         margin-right: 10px;
@@ -211,6 +221,7 @@ body{
 }
 
 header{
+    padding-bottom: 20px;
     margin-bottom: 50px;
     padding-left: 40px;
     padding-right: 40px;
@@ -220,6 +231,10 @@ header{
 h1{
     margin-top: 20px;
     color: white;
+}
+
+header img{
+    padding-top: 20px;
 }
 
 h2{
