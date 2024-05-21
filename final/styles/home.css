@@ -6,6 +6,10 @@
     main div img{
         height: 40px;
     }
+
+    main div p{
+        font-size: 28px;
+    }
 }
 
 @media (min-width: 700px){
@@ -31,6 +35,10 @@
     main div img{
         height: 70px;
     }
+
+    main div p{
+        font-size: 36px;
+    }
 }
 
 main div{
@@ -54,7 +62,6 @@ main a{
 }
 
 main div p{
-    font-size: 36px;
     align-self: center;
     margin-left: 20px;
     margin-right: 20px;
