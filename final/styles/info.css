@@ -43,6 +43,14 @@
         width: 100%;
         height: auto;
     }
+
+    .infoText{
+        height: 470px;
+    }
+
+    .infoBox{
+        height: 330px;
+    }
 }
 
 @media (min-width: 1300px){
@@ -79,13 +87,17 @@
         z-index: 1;
         position: absolute;
     }
-}
 
-.infoText{
-    width: 100%;
-    height: 570px;
-    z-index: 2;
-    position: relative;
+    .infoText{
+        width: 100%;
+        height: 570px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .infoBox{
+        height: 430px;
+    }
 }
 
 .titleBox{
@@ -112,7 +124,6 @@
 
 .infoBox{
     color: white;
-    height: 430px;
     overflow: hidden;
     overflow-y: scroll;
     padding-left: 20px;
