@@ -6,20 +6,14 @@ let unitsData = [];
 let totalCost = 0;
 let numUnits = 0;
 
-
-
 const getData = async () => {
-
     const response = await fetch((document.querySelector("#fileDirectory")).value);
     unitsData = await response.json();
     displayUnits(unitsData);
 }
 
-
-
 const displayUnits = (units) => {
     units.forEach(unit => {
-
         numUnits += 1;
 
         const article = document.createElement(`article`);
@@ -37,49 +31,39 @@ const displayUnits = (units) => {
         const h4cost = document.createElement(`h4`);
         h4cost.textContent = unit.cost;
 
-        const button = document.createElement(`input`)
-        button.value = `+`
-        button.type = `button`
-
-        button.addEventListener(`click`, () => {
-            addUserUnit(unit);
-        });
-
         article.appendChild(img);
         article.appendChild(h3name);
         article.appendChild(h4limit);
         article.appendChild(h4cost);
-        article.appendChild(button);
+
+        article.addEventListener(`click`, () => {
+            addUserUnit(unit);
+        });
 
         document.querySelector(`#${unit.type}`).appendChild(article);
-
     });
 
     numberOfUnitsDisplay.textContent = `Units Available: ${numUnits}`;
 };
 
-
-
 const addUserUnit = (unit) => {
-
     const existingUnit = findUserUnit(unit);
 
     if (existingUnit) {
-
         if (existingUnit.value < unit.limit) {
             existingUnit.value++;
-            existingUnit.article.querySelector(`#count`).textContent = `x${existingUnit.value}`;
+            existingUnit.article.querySelector(`#count`).textContent = `${existingUnit.value}/${unit.limit}`;
 
             totalCost += unit.cost;
             totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
 
             if (existingUnit.value == unit.limit) {
                 changeBoxRed(unit);
+                existingUnit.article.querySelector('h4:nth-child(3)').style.color = 'green';
+                findAvailableUnitArticle(unit).classList.add('disabled');
             }
         }
-
     } else {
-
         const article = document.createElement(`article`);
 
         const h3name = document.createElement(`h4`);
@@ -90,43 +74,41 @@ const addUserUnit = (unit) => {
         img.alt = unit.name;
 
         const h4count = document.createElement(`h4`);
-        h4count.textContent = `x1`
-        h4count.id = `count`
+        h4count.textContent = `1/${unit.limit}`
+        h4count.id = `count`;
         article.value = 1;
 
         const h4cost = document.createElement(`h4`);
         h4cost.textContent = unit.cost;
 
-        const button = document.createElement(`input`)
-        button.value = `-`
-        button.type = `button`
-
-        button.addEventListener(`click`, () => {
-            
-            const existingUnit = findUserUnit(unit);
-
-            if (existingUnit.value > 1) {
-
-                existingUnit.value--;
-                existingUnit.article.querySelector(`#count`).textContent = `x${existingUnit.value}`;
-
-                totalCost -= unit.cost;
-                totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
-
-            } else {
-                article.remove();
-                totalCost -= unit.cost;
-                totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
-            }
-
-            changeBoxGrey(unit);
-        });
-
         article.appendChild(img);
         article.appendChild(h3name);
         article.appendChild(h4count);
         article.appendChild(h4cost);
-        article.appendChild(button);
+
+        article.addEventListener(`click`, () => {
+            const existingUnit = findUserUnit(unit);
+
+            if (existingUnit.value > 1) {
+                existingUnit.value--;
+                existingUnit.article.querySelector(`#count`).textContent = `${existingUnit.value}/${unit.limit}`;
+
+                totalCost -= unit.cost;
+                totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
+
+                if (existingUnit.value < unit.limit) {
+                    existingUnit.article.querySelector('h4:nth-child(3)').style.color = '';
+                    findAvailableUnitArticle(unit).classList.remove('disabled');
+                }
+            } else {
+                existingUnit.article.remove();
+                totalCost -= unit.cost;
+                totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
+                findAvailableUnitArticle(unit).classList.remove('disabled');
+            }
+
+            changeBoxGrey(unit);
+        });
 
         document.querySelector(`#u${unit.type}`).appendChild(article);
 
@@ -135,6 +117,8 @@ const addUserUnit = (unit) => {
 
         if (unit.limit === 1) {
             changeBoxRed(unit);
+            article.querySelector('h4:nth-child(3)').style.color = 'green';
+            findAvailableUnitArticle(unit).classList.add('disabled');
         }
     }
 }
@@ -155,21 +139,15 @@ const findUserUnit = (unit) => {
     return null;
 };
 
-
-
 const changeBoxRed = (unit) => {
-
     const availableUnitArticle = findAvailableUnitArticle(unit);
-
     if (availableUnitArticle) {
         availableUnitArticle.style.backgroundColor = `red`;
     }
 };
 
 const changeBoxGrey = (unit) => {
-
     const availableUnitArticle = findAvailableUnitArticle(unit);
-
     if (availableUnitArticle) {
         availableUnitArticle.style.backgroundColor = `#222`;
     }
@@ -185,7 +163,5 @@ const findAvailableUnitArticle = (unit) => {
     }
     return null;
 };
-
-
 
 getData();

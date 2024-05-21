@@ -75,6 +75,7 @@ h3{
 
 h4{
     color: white;
+    font-size: 20px;
 }
 
 #container{
@@ -93,8 +94,8 @@ h4{
     height: 530px;
     overflow: hidden;
     overflow-y: scroll;
-    padding-left: 42px;
-    padding-right: 30px;
+    padding-left: 57px;
+    padding-right: 45px;
 }
 
 /* For Webkit-based browsers */
@@ -132,7 +133,7 @@ h4{
 
 main img{
     width: 100px;
-    border: 2px solid gold;
+    border-radius: 10px 0 0 10px;
 }
 
 article{
@@ -140,9 +141,25 @@ article{
     align-items: center;
     justify-content: space-between;
     background-color: var(--box-color);
-    padding: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+    padding-right: 20px;
+}
+
+#availableList article:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px green;
+}
+
+#availableList article.disabled:hover{
+    transform: none;
+    box-shadow: none;
+}
+
+#userList article:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px red;
 }
 
 article h3, article h4{
@@ -157,14 +174,4 @@ article input{
     border: 2px solid gold;
     text-align: right;
     transition: transform 0.3s ease;
-}
-
-#availableList article input:hover{
-    transform: scale(1.2);
-    box-shadow: 0 0 20px green;
-}
-
-#userList article input:hover{
-    transform: scale(1.2);
-    box-shadow: 0 0 20px red;
 }
