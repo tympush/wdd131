@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Roboto+Slab:wght@100..900&display=swap');
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, p{
     font-family: "Libre Baskerville";
 }
 
-a, p{
+header a{
     font-family: "Roboto Slab";
 }
 

@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Roboto+Slab:wght@100..900&display=swap');
+
+header, #font1{
+    font-family: "Roboto Slab";
+}
+
+h2, #font2{
+    font-family: "Libre Baskerville";
+}
+
+p, li, #font3{
+    font-family: "M PLUS Rounded 1c";
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -31,6 +45,7 @@ ul{
     text-align: center;
     background-color:#121212;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #mainColors p, #factionColors p{
@@ -51,4 +66,28 @@ ul{
 
 #highlight{
     background-color:#ccccff;
+}
+
+#fontsBox{
+    background-color:#121212;
+    padding: 40px;
+    margin-top: 10px;
+}
+
+#font1, #font2, #font3{
+    font-size: 26px;
+    color: white
+}
+
+#wireframeContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#wireframeContainer div{
+    padding: 20px;
+}
+
+#wireframeContainer div p{
+    text-align: center;
 }
