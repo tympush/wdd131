@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Roboto+Slab:wght@100..900&display=swap');
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Libre Baskerville";
+}
+
+a, p{
+    font-family: "Roboto Slab";
+}
+
 @media (max-width: 700px){
     h1{
         font-size: 48px;

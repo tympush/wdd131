@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #222;
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+
+header img{
+    width: 100px;
+    padding-right: 20px;
+}
+
+main{
+    padding: 20px;
+}
+
+h2{
+    padding-top: 40px;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+#mainColors, #factionColors{
+    text-align: center;
+    background-color:#121212;
+    display: flex;
+}
+
+#mainColors p, #factionColors p{
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+#backgroundColor{
+    background-color:#121212;
+    border: 2px solid white;
+}
+
+#boxColor{
+    background-color:#222;
+}
+
+#highlight{
+    background-color:#ccccff;
+}
