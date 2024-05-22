@@ -1,0 +1,30 @@
+.statBox{
+    background-color: #222;
+}
+
+h2{
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+
+.statTextBox p{
+    font-size: 48px;
+}
+
+.place1{
+    color: #FFD700;
+}
+
+.place2{
+    color: #C0C0C0;
+}
+
+.place3{
+    color: #CD7F32;
+}
+
+span{
+    color: white;
+    font-size: 28px;
+}
