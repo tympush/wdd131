@@ -17,6 +17,10 @@ p, li, #font3{
     padding: 0;
 }
 
+body{
+    background-color:#121212;
+}
+
 header{
     background-color: #222;
     color: white;
@@ -35,17 +39,23 @@ main{
 
 h2{
     padding-top: 40px;
+    color:white;
+}
+
+p{
+    color:white;
 }
 
 ul{
     padding-left: 20px;
+    color:white;
 }
 
 #mainColors, #factionColors{
     text-align: center;
-    background-color:#121212;
     display: flex;
     flex-wrap: wrap;
+    border: 2px solid white;
 }
 
 #mainColors p, #factionColors p{
