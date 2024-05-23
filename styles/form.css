@@ -79,6 +79,10 @@ form .rating-options label span {
     color: #967bb6;
 }
 
+#writtenReview {
+    height: 200px;
+}
+
 form input[type="submit"] {
     margin-top: 20px;
     padding: 10px;
@@ -90,4 +94,9 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: #dd99cc;
+}
+
+main p{
+    text-align: center;
+    font-size: 36px;
 }
