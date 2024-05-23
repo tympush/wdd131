@@ -39,7 +39,7 @@ products.forEach(product => {
     productWindow.appendChild(option);
 });
 
-const button = document.querySelector("#submit");
+/*const button = document.querySelector("#submit");
 
 button.addEventListener('click', () => {
     let reviewCount = localStorage.getItem("reviewCount");
@@ -52,4 +52,4 @@ button.addEventListener('click', () => {
     reviewCount++;
 
     localStorage.setItem("reviewCount", reviewCount);
-}); 
+});*/
