@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Product Review Form - Tymur Pushnoy</title>
+    <meta name="author" content="Tymur Pushnoy">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Product Review Form - Tymur Pushnoy">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+
+            <legend>Product Name</legend>
+            <select id="productName" name="subject" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <legend>Overall Rating</legend>
+            <label for="rating1"><input type="radio" id="rating1" name="starRating" value="1">*</label>
+            <label for="rating2"><input type="radio" id="rating2" name="starRating" value="2">**</label>
+            <label for="rating3"><input type="radio" id="rating3" name="starRating" value="3">***</label>
+            <label for="rating4"><input type="radio" id="rating4" name="starRating" value="4">****</label>
+            <label for="rating5"><input type="radio" id="rating5" name="starRating" value="5">*****</label>
+
+            <label>Date of Installation <input type="date" id="installDate" name="installeDate" required></label>
+
+            <legend>Which features did you find useful in the Product?<br>(Check all that apply)</legend>
+            <label><input type="checkbox" id="" name="features" value="durability">Durability</label>
+            <label><input type="checkbox" id="" name="features" value="easeOfUse">Ease Of Use</label>
+            <label><input type="checkbox" id="" name="features" value="performance">Performance</label>
+            <label><input type="checkbox" id="" name="features" value="design">Design</label>
+
+            <legend>Written Review</legend>
+            <textarea name="writtenReview" id="writtenReview"></textarea>
+
+            <legend>Your Name</legend>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p id="info">&copy;<span id="currentyear"></span> 🐙 Tymur Pushnoy 🐙 Belgium</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
