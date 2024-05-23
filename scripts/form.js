@@ -52,4 +52,4 @@ button.addEventListener('click', () => {
     reviewCount++;
 
     localStorage.setItem("reviewCount", reviewCount);
-});
+}); 
