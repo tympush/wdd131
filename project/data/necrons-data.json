@@ -4,356 +4,356 @@
         "type": "EpicHero",
         "limit": 1,
         "cost": 420,
-        "image": "images/.webp"
+        "image": "images/the-silent-king.webp"
     },
     {
         "name": "C'tan Shard of the Void Dragon",
         "type": "EpicHero",
         "limit": 1,
         "cost": 290,
-        "image": "images/.webp"
+        "image": "images/ctan-shard-of-the-void-dragon.webp"
     },
     {
         "name": "C'tan Shard of the Nightbringer",
         "type": "EpicHero",
         "limit": 1,
         "cost": 295,
-        "image": "images/.webp"
+        "image": "images/ctan-shard-of-the-nightbringer.webp"
     },
     {
         "name": "C'tan Shard of the Deceiver",
         "type": "EpicHero",
         "limit": 1,
         "cost": 265,
-        "image": "images/.webp"
+        "image": "images/ctan-shard-of-the-deceiver.webp"
     },
     {
         "name": "Imotekh the Stormlord",
         "type": "EpicHero",
         "limit": 1,
         "cost": 100,
-        "image": "images/.webp"
+        "image": "images/imotekh-the-stormlord.webp"
     },
     {
         "name": "Orikan the Diviner",
         "type": "EpicHero",
         "limit": 1,
         "cost": 80,
-        "image": "images/.webp"
+        "image": "images/orikan-the-diviner.webp"
     },
     {
         "name": "Trazyn the Infinite",
         "type": "EpicHero",
         "limit": 1,
         "cost": 75,
-        "image": "images/.webp"
+        "image": "images/trazyn-the-infinite.webp"
     },
     {
         "name": "Illuminor Szeras",
         "type": "EpicHero",
         "limit": 1,
         "cost": 175,
-        "image": "images/.webp"
+        "image": "images/illuminor-szeras.webp"
     },
     {
         "name": "Catacomb Command Barge",
         "type": "Character",
         "limit": 3,
         "cost": 130,
-        "image": "images/.webp"
+        "image": "images/catacomb-command-barge.webp"
     },
     {
         "name": "Chronomancer",
         "type": "Character",
         "limit": 3,
         "cost": 65,
-        "image": "images/.webp"
+        "image": "images/chronomancer.webp"
     },
     {
         "name": "Hexmark Destroyer",
         "type": "Character",
         "limit": 3,
         "cost": 70,
-        "image": "images/.webp"
+        "image": "images/hexmark-destroyer.webp"
     },
     {
         "name": "Lokhust Lord",
         "type": "Character",
         "limit": 3,
         "cost": 80,
-        "image": "images/.webp"
+        "image": "images/lokhust-lord.webp"
     },
     {
         "name": "Overlord",
         "type": "Character",
         "limit": 3,
         "cost": 85,
-        "image": "images/.webp"
+        "image": "images/overlord.webp"
     },
     {
         "name": "Overlord with Translocation Shroud",
         "type": "Character",
         "limit": 3,
         "cost": 85,
-        "image": "images/.webp"
+        "image": "images/overlord-with-translocation-shroud.webp"
     },
     {
         "name": "Plasmancer",
         "type": "Character",
         "limit": 3,
         "cost": 65,
-        "image": "images/.webp"
+        "image": "images/plasmancer.webp"
     },
     {
         "name": "Psychomancer",
         "type": "Character",
         "limit": 3,
         "cost": 55,
-        "image": "images/.webp"
+        "image": "images/psychomancer.webp"
     },
     {
         "name": "Royal Warden",
         "type": "Character",
         "limit": 3,
         "cost": 40,
-        "image": "images/.webp"
+        "image": "images/royal-warden.webp"
     },
     {
         "name": "Skorpekh Lord",
         "type": "Character",
         "limit": 3,
         "cost": 80,
-        "image": "images/.webp"
+        "image": "images/skorpekh-lord.webp"
     },
     {
         "name": "Technomancer",
         "type": "Character",
         "limit": 3,
         "cost": 85,
-        "image": "images/.webp"
+        "image": "images/technomancer.webp"
     },
     {
         "name": "Transcendant C'tan",
         "type": "Character",
         "limit": 3,
         "cost": 285,
-        "image": "images/.webp"
+        "image": "images/transcendant-ctan.webp"
     },
     {
         "name": "Immortals",
         "type": "Battleline",
         "limit": 6,
         "cost": 75,
-        "image": "images/.webp"
+        "image": "images/immortals.webp"
     },
     {
         "name": "Necron Warriors",
         "type": "Battleline",
         "limit": 6,
         "cost": 100,
-        "image": "images/.webp"
+        "image": "images/necron-warriors.webp"
     },
     {
         "name": "Cryptothralls",
         "type": "Infantry",
         "limit": 3,
         "cost": 60,
-        "image": "images/.webp"
+        "image": "images/cryptothralls.webp"
     },
     {
         "name": "Deathmarks",
         "type": "Infantry",
         "limit": 3,
         "cost": 60,
-        "image": "images/.webp"
+        "image": "images/deathmarks.webp"
     },
     {
         "name": "Flayed Ones",
         "type": "Infantry",
         "limit": 3,
         "cost": 60,
-        "image": "images/.webp"
+        "image": "images/flayed-ones.webp"
     },
     {
         "name": "Lychguard",
         "type": "Infantry",
         "limit": 3,
         "cost": 85,
-        "image": "images/.webp"
+        "image": "images/lychguard.webp"
     },
     {
         "name": "Ophydian Destroyers",
         "type": "Infantry",
         "limit": 3,
         "cost": 90,
-        "image": "images/.webp"
+        "image": "images/ophydian-destroyers.webp"
     },
     {
         "name": "Skorpekh Destroyers",
         "type": "Infantry",
         "limit": 3,
         "cost": 90,
-        "image": "images/.webp"
+        "image": "images/skorpekh-destroyers.webp"
     },
     {
         "name": "Triarch Praetorians",
         "type": "Infantry",
         "limit": 3,
         "cost": 120,
-        "image": "images/.webp"
+        "image": "images/triarch-praetorians.webp"
     },
     {
         "name": "Conoptek Scarab Swarms",
         "type": "Swarm",
         "limit": 3,
         "cost": 40,
-        "image": "images/.webp"
+        "image": "images/conoptek-scarab-swarms.webp"
     },
     {
         "name": "Lokhust Destroyer",
         "type": "Mounted",
         "limit": 3,
         "cost": 30,
-        "image": "images/.webp"
+        "image": "images/lokhust-destroyer.webp"
     },
     {
         "name": "Lokhust Heavy Destroyers",
         "type": "Mounted",
         "limit": 3,
         "cost": 50,
-        "image": "images/.webp"
+        "image": "images/lokhust-heavy-destroyers.webp"
     },
     {
         "name": "Tomb Blades",
         "type": "Mounted",
         "limit": 3,
         "cost": 75,
-        "image": "images/.webp"
+        "image": "images/tomb-blades.webp"
     },
     {
         "name": "Canoptek Acanthrites",
         "type": "Beast",
         "limit": 3,
         "cost": 85,
-        "image": "images/.webp"
+        "image": "images/canoptek-acanthrites.webp"
     },
     {
         "name": "Canoptek Wraiths",
         "type": "Beast",
         "limit": 3,
         "cost": 110,
-        "image": "images/.webp"
+        "image": "images/canoptek-wraiths.webp"
     },
     {
         "name": "Canoptek Tomb Sentinel",
         "type": "Monster",
         "limit": 3,
         "cost": 115,
-        "image": "images/.webp"
+        "image": "images/canoptek-tomb-sentinel.webp"
     },
     {
         "name": "Canoptek Tomb Stalker",
         "type": "Monster",
         "limit": 3,
         "cost": 130,
-        "image": "images/.webp"
+        "image": "images/canoptek-tomb-stalker.webp"
     },
     {
         "name": "Annihilation Barge",
         "type": "Vehicle",
         "limit": 3,
         "cost": 115,
-        "image": "images/.webp"
+        "image": "images/annihilation-barge.webp"
     },
     {
         "name": "Canoptek Doomstalker",
         "type": "Vehicle",
         "limit": 3,
         "cost": 135,
-        "image": "images/.webp"
+        "image": "images/canoptek-doomstalker.webp"
     },
     {
         "name": "Canoptek Reanimator",
         "type": "Vehicle",
         "limit": 3,
         "cost": 75,
-        "image": "images/.webp"
+        "image": "images/canoptek-reanimator.webp"
     },
     {
         "name": "Canoptek Spyders",
         "type": "Vehicle",
         "limit": 3,
         "cost": 75,
-        "image": "images/.webp"
+        "image": "images/canoptek-spyders.webp"
     },
     {
         "name": "Doom Scythe",
         "type": "Vehicle",
         "limit": 3,
         "cost": 230,
-        "image": "images/.webp"
+        "image": "images/doom-scythe.webp"
     },
     {
         "name": "Doomsday Ark",
         "type": "Vehicle",
         "limit": 3,
         "cost": 200,
-        "image": "images/.webp"
+        "image": "images/doomsday-ark.webp"
     },
     {
         "name": "Monolith",
         "type": "Vehicle",
         "limit": 3,
         "cost": 375,
-        "image": "images/.webp"
+        "image": "images/monolith.webp"
     },
     {
         "name": "Night Scythe",
         "type": "Vehicle",
         "limit": 3,
         "cost": 145,
-        "image": "images/.webp"
+        "image": "images/night-scythe.webp"
     },
     {
         "name": "Obelisk",
         "type": "Vehicle",
         "limit": 3,
         "cost": 325,
-        "image": "images/.webp"
+        "image": "images/obelisk.webp"
     },
     {
         "name": "Seraptek Heavy Construct",
         "type": "Vehicle",
         "limit": 3,
         "cost": 540,
-        "image": "images/.webp"
+        "image": "images/seraptek-heavy-construct.webp"
     },
     {
         "name": "Tesseract Ark",
         "type": "Vehicle",
         "limit": 3,
         "cost": 130,
-        "image": "images/.webp"
+        "image": "images/tesseract-ark.webp"
     },
     {
         "name": "Tesseract Vault",
         "type": "Vehicle",
         "limit": 3,
         "cost": 400,
-        "image": "images/.webp"
+        "image": "images/tesseract-vault.webp"
     },
     {
         "name": "Triarch Stalker",
         "type": "Vehicle",
         "limit": 3,
         "cost": 125,
-        "image": "images/.webp"
+        "image": "images/triarch-stalker.webp"
     },
     {
         "name": "Ghost Ark",
         "type": "DedicatedTransport",
         "limit": 3,
         "cost": 125,
-        "image": "images/.webp"
+        "image": "images/ghost-ark.webp"
     }
 ]
