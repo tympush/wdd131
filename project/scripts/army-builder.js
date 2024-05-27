@@ -182,16 +182,25 @@ const findAvailableUnitArticle = (unit) => {
 
 getData();
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const availableListFrame = document.querySelector("#availableListFrame");
     const userListFrame = document.querySelector("#userListFrame");
     const addButton = document.querySelector("#addButton");
     const myButton = document.querySelector("#myButton");
 
+    let activeButton = addButton;
+
     const updateVisibility = () => {
         if (window.innerWidth < 1200) {
-            availableListFrame.style.display = "block";
-            userListFrame.style.display = "none";
+            if (activeButton === addButton) {
+                availableListFrame.style.display = "block";
+                userListFrame.style.display = "none";
+            } else {
+                availableListFrame.style.display = "none";
+                userListFrame.style.display = "block";
+            }
         } else {
             availableListFrame.style.display = "block";
             userListFrame.style.display = "block";
@@ -201,27 +210,21 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", updateVisibility);
     updateVisibility();
 
-    addButton.addEventListener("click", () => {
-        availableListFrame.style.display = "block";
-        userListFrame.style.display = "none";
-    });
+    const handleButtonClick = (button, showAvailable) => {
+        activeButton.classList.remove('highlight');
+        button.classList.add('highlight');
+        activeButton = button;
 
-    myButton.addEventListener("click", () => {
-        availableListFrame.style.display = "none";
-        userListFrame.style.display = "block";
-    });
+        if (showAvailable) {
+            availableListFrame.style.display = "block";
+            userListFrame.style.display = "none";
+        } else {
+            availableListFrame.style.display = "none";
+            userListFrame.style.display = "block";
+        }
+        updateVisibility();
+    };
+
+    addButton.addEventListener("click", () => handleButtonClick(addButton, true));
+    myButton.addEventListener("click", () => handleButtonClick(myButton, false));
 });
-
-
-const addButton = document.getElementById('addButton');
-const myButton = document.getElementById('myButton');
-
-function highlightButton(event) {
-    addButton.classList.remove('highlight');
-    myButton.classList.remove('highlight');
-
-    event.target.classList.add('highlight');
-}
-
-addButton.addEventListener('click', highlightButton);
-myButton.addEventListener('click', highlightButton);
