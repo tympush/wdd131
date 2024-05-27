@@ -11,11 +11,12 @@ const getData = async () => {
     const response = await fetch((document.querySelector("#fileDirectory")).value);
     unitsData = await response.json();
     displayUnits(unitsData);
-}
+};
 
 const displayUnits = (units) => {
     units.forEach(unit => {
         numUnits += 1;
+        unit.currentCount = 0;
 
         const article = document.createElement(`article`);
 
@@ -26,15 +27,18 @@ const displayUnits = (units) => {
         img.src = unit.image;
         img.alt = unit.name;
 
-        const h4limit = document.createElement(`h4`);
-        h4limit.textContent = `Max: ${unit.limit}`;
+        const h4count = document.createElement(`h4`);
+        const spanCount = document.createElement(`span`);
+        spanCount.textContent = `${unit.currentCount}/${unit.limit}`;
+        spanCount.id = `count`;
+        h4count.appendChild(spanCount);
 
         const h4cost = document.createElement(`h4`);
         h4cost.textContent = unit.cost;
 
         article.appendChild(img);
         article.appendChild(h3name);
-        article.appendChild(h4limit);
+        article.appendChild(h4count);
         article.appendChild(h4cost);
 
         article.addEventListener(`click`, () => {
@@ -61,6 +65,9 @@ const addUserUnit = (unit) => {
             userUnitsCount++;
             document.querySelector('#myButton').textContent = `My List (${userUnitsCount})`;
 
+            unit.currentCount++;
+            updateAvailableUnitCount(unit);
+
             if (existingUnit.value == unit.limit) {
                 changeBoxRed(unit);
                 existingUnit.article.querySelector('h4:nth-child(3)').style.color = 'green';
@@ -78,8 +85,10 @@ const addUserUnit = (unit) => {
         img.alt = unit.name;
 
         const h4count = document.createElement(`h4`);
-        h4count.textContent = `1/${unit.limit}`;
-        h4count.id = `count`;
+        const spanCount = document.createElement(`span`);
+        spanCount.textContent = `1/${unit.limit}`;
+        spanCount.id = `count`;
+        h4count.appendChild(spanCount);
         article.value = 1;
 
         const h4cost = document.createElement(`h4`);
@@ -103,6 +112,9 @@ const addUserUnit = (unit) => {
                 userUnitsCount--;
                 document.querySelector('#myButton').textContent = `My List (${userUnitsCount})`;
 
+                unit.currentCount--;
+                updateAvailableUnitCount(unit);
+
                 if (existingUnit.value < unit.limit) {
                     existingUnit.article.querySelector('h4:nth-child(3)').style.color = '';
                     findAvailableUnitArticle(unit).classList.remove('disabled');
@@ -114,6 +126,9 @@ const addUserUnit = (unit) => {
 
                 userUnitsCount--;
                 document.querySelector('#myButton').textContent = `My List (${userUnitsCount})`;
+
+                unit.currentCount--;
+                updateAvailableUnitCount(unit);
 
                 findAvailableUnitArticle(unit).classList.remove('disabled');
             }
@@ -129,16 +144,16 @@ const addUserUnit = (unit) => {
         userUnitsCount++;
         document.querySelector('#myButton').textContent = `My List (${userUnitsCount})`;
 
+        unit.currentCount++;
+        updateAvailableUnitCount(unit);
+
         if (unit.limit === 1) {
             changeBoxRed(unit);
             article.querySelector('h4:nth-child(3)').style.color = 'green';
             findAvailableUnitArticle(unit).classList.add('disabled');
         }
     }
-}
-
-
-
+};
 
 const findUserUnit = (unit) => {
     const unitArticles = userUnitsList.querySelectorAll(`article`);
@@ -147,11 +162,24 @@ const findUserUnit = (unit) => {
         if (nameElement.textContent === unit.name) {
             return {
                 article: unitArticle,
-                value: parseInt(unitArticle.querySelector(`#count`).textContent.replace(`x`, ``))
+                value: parseInt(unitArticle.querySelector(`#count`).textContent.split('/')[0])
             };
         }
     }
     return null;
+};
+
+const updateAvailableUnitCount = (unit) => {
+    const availableUnitArticle = findAvailableUnitArticle(unit);
+    if (availableUnitArticle) {
+        const spanCount = availableUnitArticle.querySelector(`#count`);
+        spanCount.textContent = `${unit.currentCount}/${unit.limit}`;
+        if (unit.currentCount === unit.limit) {
+            spanCount.style.color = 'red';
+        } else {
+            spanCount.style.color = '';
+        }
+    }
 };
 
 const changeBoxRed = (unit) => {
@@ -168,7 +196,6 @@ const changeBoxGrey = (unit) => {
     }
 };
 
-
 const findAvailableUnitArticle = (unit) => {
     const unitArticles = availableUnitsList.querySelectorAll(`article`);
     for (const unitArticle of unitArticles) {
@@ -181,8 +208,6 @@ const findAvailableUnitArticle = (unit) => {
 };
 
 getData();
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const availableListFrame = document.querySelector("#availableListFrame");
