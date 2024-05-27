@@ -50,3 +50,23 @@ GetStats(tWin1, tWin2, tWin3, 45, 60)
 GetStats(tPick1, tPick2, tPick3, 10, 20)
 GetStats(gWin1, gWin2, gWin3, 45, 60)
 GetStats(gPick1, gPick2, gPick3, 5, 20)
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const now = new Date();
+
+    const options = {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    };
+    const formattedTime = now.toLocaleTimeString('en-GB', options);
+
+    const dataUpdatedElements = document.querySelectorAll('.dataUpdated');
+
+    dataUpdatedElements.forEach(element => {
+        element.textContent = `Data Updated: ${formattedTime}`;
+    });
+});
