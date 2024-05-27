@@ -129,3 +129,15 @@ h1{
 main a{
     color: white;
 }
+
+footer{
+    background-color: #222;
+    padding: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+}

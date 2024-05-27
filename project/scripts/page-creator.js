@@ -29,6 +29,7 @@ document.querySelectorAll('.dynamicLink').forEach(link => {
                 <link rel="stylesheet" href="styles/army-builder.css">
                 <script src="scripts/army-builder.js" defer></script>
                 <script src="scripts/page-creator.js" defer></script>
+                <script src="scripts/get-dates.js" defer></script>
                 <input type="hidden" id="fileDirectory" value="data/${title}-data.json">
             </head>
             <body>
@@ -83,7 +84,8 @@ document.querySelectorAll('.dynamicLink').forEach(link => {
                 </main>
             
                 <footer>
-            
+                    <p id="info">&copy;<span id="currentyear"></span> Warhammer 40,000 Army Builder</p>
+                    <p id="lastModified"></p>
                 </footer>
             </body>
             </html>

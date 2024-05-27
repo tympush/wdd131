@@ -7,7 +7,7 @@
         font-size: 40px;
     }
 
-    span{
+    .statBox span{
         font-size: 20px;
     }
 }
@@ -21,7 +21,7 @@
         font-size: 48px;
     }
 
-    span{
+    .statBox span{
         font-size: 28px;
     }
 }
