@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Roboto+Slab:wght@100..900&display=swap');
 
-h2, h3{
+h1{
+    font-family: "Libre Baskerville";
+}
+
+h2, h3, footer{
     font-family: "Roboto Slab";
 }
 
-p{
+p, h4{
     font-family: "M PLUS Rounded 1c";
 }
 
@@ -12,7 +16,7 @@ p{
     --box-color: #222;
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
     h1{
         font-size: 36px;
         padding: 10px;
@@ -46,7 +50,7 @@ p{
     }
 }
 
-@media (min-width: 600px){
+@media (min-width: 700px){
     header{
         clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% calc(100% - 20px));
     }
@@ -315,4 +319,5 @@ footer{
 footer p{
     color: white;
     text-align: center;
+    font-size: 20px;
 }

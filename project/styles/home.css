@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Roboto+Slab:wght@100..900&display=swap');
+
+p{
+    font-family: "Libre Baskerville";
+}
+
 @media (max-width: 700px){
     main div{
         margin-bottom: 30px;
