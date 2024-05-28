@@ -35,7 +35,7 @@
         "image": "images/uriel-ventris.webp"
     },
     {
-        "name": "Apothicary",
+        "name": "Apothecary",
         "type": "Character",
         "limit": 3,
         "cost": 50,
@@ -91,7 +91,7 @@
         "image": "images/techmarine.webp"
     },
     {
-        "name": "Asault Intercessor Squad",
+        "name": "Assault Intercessor Squad",
         "type": "Battleline",
         "limit": 6,
         "cost": 75,
@@ -140,7 +140,7 @@
         "image": "images/centurion-assault.webp"
     },
     {
-        "name": "Centurion Devestator Squad",
+        "name": "Centurion Devastator Squad",
         "type": "Infantry",
         "limit": 3,
         "cost": 185,
