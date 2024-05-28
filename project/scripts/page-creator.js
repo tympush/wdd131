@@ -34,9 +34,9 @@ document.querySelectorAll('.dynamicLink').forEach(link => {
             </head>
             <body>
                 <header style="background-color: ${titleColor};">
-                    <img src="images/${title}-icon.svg" alt="">
+                    <img src="images/${title}-icon.svg" alt="${(formatString(title)).toUpperCase()} Icon" loading="lazy">
                     <h1>${(formatString(title)).toUpperCase()}</h1>
-                    <img src="images/${title}-icon.svg" alt="">
+                    <img src="images/${title}-icon.svg" alt="${(formatString(title)).toUpperCase()} Icon" loading="lazy">
                 </header>
             
                 <main>

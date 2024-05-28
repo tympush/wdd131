@@ -26,6 +26,7 @@ const displayUnits = (units) => {
         const img = document.createElement(`img`);
         img.src = unit.image;
         img.alt = unit.name;
+        img.loading = "lazy";
 
         const h4count = document.createElement(`h4`);
         const spanCount = document.createElement(`span`);
@@ -83,6 +84,7 @@ const addUserUnit = (unit) => {
         const img = document.createElement(`img`);
         img.src = unit.image;
         img.alt = unit.name;
+        img.loading = "lazy";
 
         const h4count = document.createElement(`h4`);
         const spanCount = document.createElement(`span`);
