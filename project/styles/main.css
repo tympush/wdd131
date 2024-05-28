@@ -1,33 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Roboto+Slab:wght@100..900&display=swap');
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: "Libre Baskerville";
 }
 
-header a, footer p{
+header a, footer p {
     font-family: "Roboto Slab";
 }
 
-@media (max-width: 700px){
-    h1{
+@media (max-width: 700px) {
+    h1 {
         font-size: 48px;
     }
 
-    header nav a{
+    header nav a {
         font-size: 32px;
         margin-top: 10px;
     }
 
-    header nav{
+    header nav {
         display: flex;
         justify-content: space-around;
     }
 
-    #logo{
+    #logo {
         display: none;
     }
 
-    .changing-image-container{
+    .changing-image-container {
         position: relative;
         width: 100%;
         margin-top: -50px;
@@ -39,30 +39,35 @@ header a, footer p{
         display: grid;
     }
 
-    #info{
+    .changing-image-container picture {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #info {
         font-size: 14px;
     }
     
-    #lastModified{
+    #lastModified {
         font-size: 10px;
     }
 }
 
-@media (min-width: 700px){
-    h1{
+@media (min-width: 700px) {
+    h1 {
         font-size: 64px;
     }
 
-    header nav a{
+    header nav a {
         font-size: 48px;
     }
 
-    header{
+    header {
         display: grid;
         grid-template-columns: 150px auto;
     }
 
-    #logo{
+    #logo {
         grid-column: 1/2;
         margin: 20px;
         align-self: center;
@@ -71,20 +76,20 @@ header a, footer p{
         transition: transform .5s;
     }
 
-    #logo:hover{
+    #logo:hover {
         transform: scale(1.2);
     }
     
-    header nav{
+    header nav {
         grid-column: 2/3;
         display: flex;
     }
 
-    header nav a:hover{
+    header nav a:hover {
         padding-bottom: 20px;
     }
 
-    .changing-image-container{
+    .changing-image-container {
         position: relative;
         width: 100%;
         height: auto;
@@ -96,23 +101,27 @@ header a, footer p{
         display: grid;
     }
 
-    #info{
+    .changing-image-container picture {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #info {
         font-size: 20px;
     }
     
-    #lastModified{
+    #lastModified {
         font-size: 16px;
     }
 }
 
-
-body{
+body {
     background-color: #121212;
     padding: 0;
     margin: 0;
 }
 
-header nav a{
+header nav a {
     color: white;
     text-decoration: none;
     margin-right: 30px;
@@ -120,48 +129,46 @@ header nav a{
     transition: padding .5s ease, color .5s;
 }
 
-header nav a:hover{
+header nav a:hover {
     color: #ccccff;
 }
 
-.changing-image{
+.changing-image {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     width: 100%;
     height: auto;
-    grid-column: 1/2;
-    grid-row: 1/2;
 }
 
 .changing-image.active {
     opacity: 1;
 }
 
-h1{
+h1 {
     color: white;
     text-align: center;
 }
 
-main a{
+main a {
     color: white;
 }
 
-footer{
+footer {
     background-color: #222;
     padding: 20px;
     margin-top: 60px;
     margin-bottom: 30px;
 }
 
-footer p{
+footer p {
     text-align: center;
     margin: 20px;
 }
 
-#info{
+#info {
     color: white;
 }
 
-#lastModified{
+#lastModified {
     color: #ccccff;
 }
