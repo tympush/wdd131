@@ -89,6 +89,27 @@
                 <p class="place3">3. <span class="stat3"></span></p>
             </div>
         </div>
+
+        <div class="statBox" id="formBox">
+            <form method="get" action="review.html">
+                <label class="headerLabel" for="gameType">Game Type</label>
+                <select id="gameType" name="gameType" required>
+                    <option value="" disabled selected>Select your Game Type ...</option>
+                    <option value="tournament">Tournament</option>
+                    <option value="casual">Casual</option>
+                </select>
+
+                <label class="headerLabel" for="faction">Faction</label>
+                <select id="faction" name="faction" required>
+                    <option value="" disabled selected>Select your Faction ...</option>
+                </select>
+
+                <label class="headerLabel">Game Results</label>
+                <label><input type="radio" id="win" name="gameResults" value="win" required>Win</label>
+                <label><input type="radio" id="draw" name="gameResults" value="draw">Draw</label>
+                <label><input type="radio" id="loss" name="gameResults" value="loss">Loss</label>
+            </form>
+        </div>
     </main>
 
     <footer>

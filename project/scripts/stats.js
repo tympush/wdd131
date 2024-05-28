@@ -70,3 +70,13 @@ document.addEventListener("DOMContentLoaded", () => {
         element.textContent = `Data Updated: ${formattedTime}`;
     });
 });
+
+
+
+const factionForm = document.querySelector(`#faction`);
+
+factionList.forEach(faction => {
+    const option = document.createElement("option");
+    option.textContent = faction;
+    factionForm.appendChild(option);
+});
