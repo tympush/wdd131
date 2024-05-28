@@ -35,7 +35,6 @@ p{
     
     main div:hover{
         transform: scale(1.1);
-        box-shadow: 0 0 20px 5px #ccccff;
     }
 
     main div img{

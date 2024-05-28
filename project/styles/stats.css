@@ -168,10 +168,12 @@ form input[type="submit"]{
     cursor: pointer;
     border-radius: 15px;
     color: white;
+    transition: transform 0.3s ease;
 }
 
 form input[type="submit"]:hover {
-    background-color: #ccccff;
+    box-shadow: 0 0 20px 5px #ccccff;
+    transform: scale(1.1);
 }
 
 select{
