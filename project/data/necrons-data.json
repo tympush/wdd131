@@ -221,7 +221,7 @@
         "type": "Mounted",
         "limit": 3,
         "cost": 50,
-        "image": "images/lokhust-heavy-destroyers.webp"
+        "image": "images/lokhust-heavy-destroyer.webp"
     },
     {
         "name": "Tomb Blades",
