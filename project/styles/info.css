@@ -90,20 +90,22 @@
         grid-column: 4 / 6;
     }
     
-    .infoRow:nth-of-type(odd) .infoImage{
+    .infoRow:nth-of-type(odd) picture{
         grid-column: 2 / 6;
     }
     
-    .infoRow:nth-of-type(even) .infoImage{
+    .infoRow:nth-of-type(even) picture{
         grid-column: 1 / 5;
+    }
+
+    main picture{
+        z-index: 1;
+        position: absolute;
     }
 
     .infoImage{
         width: 100%;
         height: auto;
-        grid-column: 1/4;
-        z-index: 1;
-        position: absolute;
     }
 
     .infoText{
