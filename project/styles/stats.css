@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Roboto+Slab:wght@100..900&display=swap');
 
-p{
+p, .headerLabel, form input[type="submit"]{
     font-family: "M PLUS Rounded 1c";
 }
 
@@ -20,6 +20,18 @@ p{
     .statBox span{
         font-size: 16px;
     }
+
+    .headerLabel{
+        font-size: 20px;
+    }
+
+    .radioLabel{
+        font-size: 16px;
+    }
+
+    form input[type="submit"]{
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 700px){
@@ -38,17 +50,37 @@ p{
     .statBox span{
         font-size: 24px;
     }
+
+    .headerLabel{
+        font-size: 24px;
+    }
+
+    .radioLabel{
+        font-size: 20px;
+    }
+
+    form input[type="submit"]{
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 1280px){
     main{
         grid-template-columns: 1fr;
     }
+
+    #formBox{
+        grid-column: 1/2;
+    }
 }
 
 @media (min-width: 1280px){
     main{
         grid-template-columns: 1fr 1fr;
+    }
+
+    #formBox{
+        grid-column: 1/3;
     }
 }
 
@@ -116,28 +148,33 @@ form {
 
 .headerLabel{
     padding-top: 25px;
-    font-size: 20px;
 }
 
 form label {
     margin-top: 10px;
+    color: white;
 }
 
-form input[type="radio"],
-form input[type="checkbox"] {
+form input[type="radio"]{
     margin-right: 10px;
 }
 
-form input[type="submit"] {
-    margin-top: 20px;
+form input[type="submit"]{
+    margin-top: 40px;
+    margin-bottom: 20px;
     padding: 10px;
     background-color: #444;
-    color: #fffbe4;
     border: none;
     cursor: pointer;
-    font-size: 24px;
+    border-radius: 15px;
+    color: white;
 }
 
 form input[type="submit"]:hover {
     background-color: #ccccff;
+}
+
+select{
+    margin-top: 5px;
+    height: 30px;
 }

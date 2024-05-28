@@ -91,6 +91,8 @@
         </div>
 
         <div class="statBox" id="formBox">
+            <h2 class="statTitle">Add Your Results</h2>
+
             <form method="get" action="review.html">
                 <label class="headerLabel" for="gameType">Game Type</label>
                 <select id="gameType" name="gameType" required>
@@ -105,9 +107,9 @@
                 </select>
 
                 <label class="headerLabel">Game Results</label>
-                <label><input type="radio" id="win" name="gameResults" value="win" required>Win</label>
-                <label><input type="radio" id="draw" name="gameResults" value="draw">Draw</label>
-                <label><input type="radio" id="loss" name="gameResults" value="loss">Loss</label>
+                <label class="radioLabel"><input type="radio" id="win" name="gameResults" value="win" required>Win</label>
+                <label class="radioLabel"><input type="radio" id="draw" name="gameResults" value="draw">Draw</label>
+                <label class="radioLabel"><input type="radio" id="loss" name="gameResults" value="loss">Loss</label>
 
                 <input id="submit" type="submit" value="Post Results">
             </form>
