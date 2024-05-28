@@ -1,4 +1,4 @@
-const factionList = ["Adeptus Custodes", "Ultra Marines", "Dark Angels", "Blood Angels", "Space Wolves", "Imperial Knights", "World Eaters", "Death Guard", "Thousand Sons", "Chaos Knights", "Necrons"];
+const factionList = ["Adeptus Custodes", "Ultramarines", "Dark Angels", "Blood Angels", "Space Wolves", "Imperial Knights", "World Eaters", "Death Guard", "Thousand Sons", "Chaos Knights", "Necrons"];
 
 const tWin1 = document.querySelector(`#tournamentWinrateBox .stat1`);
 const tWin2 = document.querySelector(`#tournamentWinrateBox .stat2`);
