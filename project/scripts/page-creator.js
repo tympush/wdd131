@@ -1,19 +1,19 @@
 function formatString(str) {
     return str
-        .split('-')
+        .split("-")
         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ');
+        .join(" ");
 }
 
 
-document.querySelectorAll('.dynamicLink').forEach(link => {
-    link.addEventListener('click', function(event) {
+document.querySelectorAll(".dynamicLink").forEach(link => {
+    link.addEventListener("click", function(event) {
         event.preventDefault();
 
-        const title = this.getAttribute('data-title');
-        const titleColor = this.getAttribute('data-title-color');
+        const title = this.getAttribute("data-title");
+        const titleColor = this.getAttribute("data-title-color");
 
-        let newWindow = window.open('', '_blank');
+        let newWindow = window.open("", "_blank");
 
         const customUrl = `${(title)}.html`;
 
@@ -91,7 +91,7 @@ document.querySelectorAll('.dynamicLink').forEach(link => {
             </html>
         `);
 
-        newWindow.history.pushState({}, '', customUrl);
+        newWindow.history.pushState({}, "", customUrl);
 
         newWindow.document.close();
     });

@@ -64,15 +64,15 @@ const addUserUnit = (unit) => {
             totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
 
             userUnitsCount++;
-            document.querySelector('#myButton').textContent = `My List (${userUnitsCount})`;
+            document.querySelector("#myButton").textContent = `My List (${userUnitsCount})`;
 
             unit.currentCount++;
             updateAvailableUnitCount(unit);
 
             if (existingUnit.value == unit.limit) {
                 changeBoxRed(unit);
-                existingUnit.article.querySelector('h4:nth-child(3)').style.color = 'green';
-                findAvailableUnitArticle(unit).classList.add('disabled');
+                existingUnit.article.querySelector("h4:nth-child(3)").style.color = "green";
+                findAvailableUnitArticle(unit).classList.add("disabled");
             }
         }
     } else {
@@ -112,14 +112,14 @@ const addUserUnit = (unit) => {
                 totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
 
                 userUnitsCount--;
-                document.querySelector('#myButton').textContent = `My List (${userUnitsCount})`;
+                document.querySelector("#myButton").textContent = `My List (${userUnitsCount})`;
 
                 unit.currentCount--;
                 updateAvailableUnitCount(unit);
 
                 if (existingUnit.value < unit.limit) {
-                    existingUnit.article.querySelector('h4:nth-child(3)').style.color = '';
-                    findAvailableUnitArticle(unit).classList.remove('disabled');
+                    existingUnit.article.querySelector("h4:nth-child(3)").style.color = "";
+                    findAvailableUnitArticle(unit).classList.remove("disabled");
                 }
             } else {
                 existingUnit.article.remove();
@@ -127,12 +127,12 @@ const addUserUnit = (unit) => {
                 totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
 
                 userUnitsCount--;
-                document.querySelector('#myButton').textContent = `My List (${userUnitsCount})`;
+                document.querySelector("#myButton").textContent = `My List (${userUnitsCount})`;
 
                 unit.currentCount--;
                 updateAvailableUnitCount(unit);
 
-                findAvailableUnitArticle(unit).classList.remove('disabled');
+                findAvailableUnitArticle(unit).classList.remove("disabled");
             }
 
             changeBoxGrey(unit);
@@ -144,15 +144,15 @@ const addUserUnit = (unit) => {
         totalCostDisplay.textContent = `Total Cost: ${totalCost}`;
 
         userUnitsCount++;
-        document.querySelector('#myButton').textContent = `My List (${userUnitsCount})`;
+        document.querySelector("#myButton").textContent = `My List (${userUnitsCount})`;
 
         unit.currentCount++;
         updateAvailableUnitCount(unit);
 
         if (unit.limit === 1) {
             changeBoxRed(unit);
-            article.querySelector('h4:nth-child(3)').style.color = 'green';
-            findAvailableUnitArticle(unit).classList.add('disabled');
+            article.querySelector("h4:nth-child(3)").style.color = "green";
+            findAvailableUnitArticle(unit).classList.add("disabled");
         }
     }
 };
@@ -164,7 +164,7 @@ const findUserUnit = (unit) => {
         if (nameElement.textContent === unit.name) {
             return {
                 article: unitArticle,
-                value: parseInt(unitArticle.querySelector(`#count`).textContent.split('/')[0])
+                value: parseInt(unitArticle.querySelector(`#count`).textContent.split("/")[0])
             };
         }
     }
@@ -177,9 +177,9 @@ const updateAvailableUnitCount = (unit) => {
         const spanCount = availableUnitArticle.querySelector(`#count`);
         spanCount.textContent = `${unit.currentCount}/${unit.limit}`;
         if (unit.currentCount === unit.limit) {
-            spanCount.style.color = 'red';
+            spanCount.style.color = "red";
         } else {
-            spanCount.style.color = '';
+            spanCount.style.color = "";
         }
     }
 };
@@ -187,14 +187,14 @@ const updateAvailableUnitCount = (unit) => {
 const changeBoxRed = (unit) => {
     const availableUnitArticle = findAvailableUnitArticle(unit);
     if (availableUnitArticle) {
-        availableUnitArticle.style.opacity = '0.35';
+        availableUnitArticle.style.opacity = "0.35";
     }
 };
 
 const changeBoxGrey = (unit) => {
     const availableUnitArticle = findAvailableUnitArticle(unit);
     if (availableUnitArticle) {
-        availableUnitArticle.style.opacity = '1';
+        availableUnitArticle.style.opacity = "1";
     }
 };
 
@@ -238,8 +238,8 @@ document.addEventListener("DOMContentLoaded", () => {
     updateVisibility();
 
     const handleButtonClick = (button, showAvailable) => {
-        activeButton.classList.remove('highlight');
-        button.classList.add('highlight');
+        activeButton.classList.remove("highlight");
+        button.classList.add("highlight");
         activeButton = button;
 
         if (showAvailable) {
