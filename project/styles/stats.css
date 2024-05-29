@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&display=swap');
 
-p, .headerLabel, form input[type="submit"]{
+.headerLabel{
+    font-family: "Libre Baskerville";
+}
+
+p, form input[type="submit"], .radioLabel{
     font-family: "M PLUS Rounded 1c";
 }
 
