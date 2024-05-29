@@ -18,7 +18,27 @@ header a, footer p{
 
 @media (max-width: 700px){
     #dropdown{
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    select{
+        background-color: #444;
+        padding: 20px 0px 20px 15px;
+        font-size: 24px;
+        width: calc(100% - 60px);
+        outline: none;
+        color: white;
+        border: none;
+        margin-bottom: 30px;
+        background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><polygon points="0,0 10,0 5,7" fill="white"/></svg>');
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+        -webkit-appearance: none; /* Remove default dropdown arrow in WebKit browsers */
+        -moz-appearance: none; /* Remove default dropdown arrow in Firefox */
+        appearance: none; /* Remove default dropdown arrow in other browsers */
     }
 
     .titleBox img{
@@ -39,10 +59,6 @@ header a, footer p{
 
     .infoBox{
         height: 530px;
-    }
-
-    .infoImage{
-        display: none;
     }
 }
 
