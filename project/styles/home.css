@@ -4,6 +4,10 @@ p{
     font-family: "Libre Baskerville";
 }
 
+:root{
+    --highlight-col: #ccccff;
+}
+
 @media (max-width: 700px){
     main div{
         margin-bottom: 30px;
@@ -54,7 +58,7 @@ main div{
 }
 
 main div:hover{
-    box-shadow: 0 0 20px 5px #ccccff;
+    box-shadow: 0 0 20px 5px var(--highlight-col);
 }
 
 main div img{

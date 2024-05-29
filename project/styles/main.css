@@ -8,6 +8,13 @@ header a, footer p {
     font-family: "Roboto Slab";
 }
 
+:root{
+    --background-col: #121212;
+    --box-col: #222222;
+    --text-col: #ffffff;
+    --highlight-col: #ccccff;
+}
+
 @media (max-width: 700px) {
     h1 {
         font-size: 48px;
@@ -116,13 +123,13 @@ header a, footer p {
 }
 
 body {
-    background-color: #121212;
+    background-color: var(--background-col);
     padding: 0;
     margin: 0;
 }
 
 header nav a {
-    color: white;
+    color: var(--text-col);
     text-decoration: none;
     margin-right: 30px;
     align-self: center;
@@ -130,7 +137,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #ccccff;
+    color: var(--highlight-col);
 }
 
 .changing-image {
@@ -145,16 +152,16 @@ header nav a:hover {
 }
 
 h1 {
-    color: white;
+    color: var(--text-col);
     text-align: center;
 }
 
 main a {
-    color: white;
+    color: var(--text-col);
 }
 
 footer {
-    background-color: #222;
+    background-color: var(--box-col);
     padding: 20px;
     margin-top: 60px;
     margin-bottom: 30px;
@@ -166,9 +173,9 @@ footer p {
 }
 
 #info {
-    color: white;
+    color: var(--text-col);
 }
 
 #lastModified {
-    color: #ccccff;
+    color: var(--highlight-col);
 }

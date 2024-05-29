@@ -13,7 +13,10 @@ main p, h4{
 }
 
 :root{
-    --box-color: #222;
+    --background-col: #121212;
+    --box-col: #222222;
+    --text-col: #ffffff;
+    --highlight-col: #ccccff;
 }
 
 @media (max-width: 700px){
@@ -234,7 +237,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #121212;
+    background-color: var(--background-col);
     padding: 0;
     margin: 0;
 }
@@ -249,7 +252,7 @@ header{
 
 h1{
     margin-top: 20px;
-    color: white;
+    color: var(--text-col);
 }
 
 header img{
@@ -258,21 +261,21 @@ header img{
 
 h2{
     font-size: 48px;
-    color: white;
-    background-color: #121212;
+    color: var(--text-col);
+    background-color: var(--background-col);
 }
 
 #totalCost, #numberOfUnits{
-    color: white;
+    color: var(--text-col);
     padding-bottom: 30px;
     font-size: 26px;
-    background-color: #121212;
+    background-color: var(--background-col);
 }
 
 h3{
-    color: white;
+    color: var(--text-col);
     background-color: #121212;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--text-col);
     margin-left: 25%;
     margin-right: 25%;
     padding-bottom: 6px;
@@ -282,13 +285,13 @@ h3{
 }
 
 h4{
-    color: white;
+    color: var(--text-col);
 }
 
 #availableListFrame, #userListFrame{
     padding: 20px;
     border-radius: 20px;
-    border: 7px solid var(--box-color);
+    border: 7px solid var(--box-col);
     display: flex;
     flex-direction: column;
 }
@@ -305,7 +308,7 @@ article{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--box-color);
+    background-color: var(--box-col);
     margin-top: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -325,7 +328,7 @@ article h3, article h4{
 }
 
 footer{
-    background-color: #222;
+    background-color: var(--box-col);
     padding: 20px;
     margin-top: 60px;
     margin-bottom: 30px;
@@ -338,9 +341,13 @@ footer p{
 }
 
 #info{
-    color: white;
+    color: var(--text-col);
 }
 
 #lastModified{
-    color: #ccccff;
+    color: var(--text-col);
+}
+
+#lastModified {
+    color: var(--highlight-col);
 }
