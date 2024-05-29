@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/info.css">
     <script src="scripts/main.js" defer></script>
     <script src="scripts/get-dates.js" defer></script>
+    <script src="scripts/info-faction-changer.js" defer></script>
 </head>
 <body>
     <header>
@@ -111,6 +112,16 @@
 
     <main>
         <h1>About The Factions</h1>
+
+        <div id="dropdown">
+            <select id="factionSelect">
+              <option value="divAC">Adeptus Custodes</option>
+              <option value="divUM">Ultramarines</option>
+              <option value="divDA">Dark Angels</option>
+              <option value="divBA">Blood Angels</option>
+              <!-- Add more options for other factions -->
+            </select>
+        </div>
 
         <div class="infoRow">
             <div class="infoText" id="divAC">
