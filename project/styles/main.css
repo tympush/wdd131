@@ -38,9 +38,15 @@
         display: grid;
     }
 
-    .changing-image-container picture {
+    #unchanging-image{
         grid-column: 1/2;
         grid-row: 1/2;
+        width: 100%;
+        height: auto;
+    }
+
+    .changing-image-container picture {
+        display: none;
     }
 
     #info {
@@ -99,6 +105,10 @@
         border-bottom-left-radius: 15px;
         grid-column: 1/3;
         display: grid;
+    }
+
+    #unchanging-image{
+        display: none;
     }
 
     .changing-image-container picture {
