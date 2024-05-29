@@ -15,7 +15,7 @@ for (let i = 1; i <= 20; i++) {
     img.alt = `Changing Image ${i}`;
     img.width = 960;
     img.height = 250;
-    img.loading = "lazy";
+    img.loading = "eager";
 
     picture.appendChild(source);
     picture.appendChild(img);
