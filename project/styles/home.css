@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@100..900&display=swap');
+
+h1, .dynamicLink p{
+    font-family: "Libre Baskerville";
+}
+
+header a, footer p{
+    font-family: "Roboto Slab";
+}
+
 :root{
     --highlight-col: #ccccff;
 }

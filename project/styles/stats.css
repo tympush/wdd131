@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c&family=Roboto+Slab:wght@100..900&display=swap');
+
+h1, h2, .headerLabel{
+    font-family: "Libre Baskerville";
+}
+
+header a, footer p{
+    font-family: "Roboto Slab";
+}
+
+.statBox p, form input[type="submit"], .radioLabel{
+    font-family: "M PLUS Rounded 1c";
+}
+
 :root{
     --box-col: #222222;
     --text-col: #ffffff;
