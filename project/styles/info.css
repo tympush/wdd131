@@ -17,6 +17,10 @@ header a, footer p{
 }
 
 @media (max-width: 700px){
+    #dropdown{
+        
+    }
+
     .titleBox img{
         height: 40px;
     }

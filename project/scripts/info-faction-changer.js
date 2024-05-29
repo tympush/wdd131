@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const factionSelect = document.getElementById("factionSelect");
+    const factionSelect = document.querySelector("#factionSelect");
     const infoRows = document.querySelectorAll(".infoRow");
 
     function updateVisibility() {
         const screenWidth = window.innerWidth;
       
         const selectedFactionId = factionSelect.value;
-        const selectedFactionElement = document.getElementById(selectedFactionId);
+        const selectedFactionElement = document.querySelector(`#${selectedFactionId}`);
       
         if (screenWidth < 700) {
             infoRows.forEach(row => {
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         infoRows.forEach(row => row.removeAttribute('hidden'));
         infoRows.forEach(row => row.setAttribute('hidden', true));
     
-        const selectedFactionElement = document.getElementById(selectedFactionId).parentElement;
+        const selectedFactionElement = document.querySelector(`#${selectedFactionId}`).parentElement;
 
         if (selectedFactionElement) {
             selectedFactionElement.removeAttribute('hidden');
@@ -36,7 +36,5 @@ document.addEventListener("DOMContentLoaded", function() {
     factionSelect.addEventListener("change", handleFactionSelection);
 
     updateVisibility();
-    handleFactionSelection();
-
     window.addEventListener("resize", updateVisibility);
 });
