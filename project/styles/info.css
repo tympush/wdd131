@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap');
 
 h1, .titleBox p{
-    font-family: "Libre Baskerville";
+    font-family: "Libre Baskerville", "Times New Roman", Times, serif
 }
 
 header a, footer p{
-    font-family: "Roboto Slab";
+    font-family: "Roboto Slab", Georgia, serif;
 }
 
 .infoBox p{
-    font-family: "Nunito";
+    font-family: "Nunito", "Trebuchet MS", Helvetica, sans-serif;
 }
 
 :root{
