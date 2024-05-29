@@ -16,7 +16,7 @@ header a, footer p{
     --text-col: #ffffff;
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
     .titleBox img{
         height: 40px;
     }
@@ -30,15 +30,19 @@ header a, footer p{
     }
 
     .infoText{
-        height: 340px;
+        height: 640px;
     }
 
     .infoBox{
-        height: 230px;
+        height: 530px;
+    }
+
+    .infoImage{
+        display: none;
     }
 }
 
-@media (min-width: 600px){
+@media (min-width: 700px){
     .titleBox img{
         height: 70px;
     }
