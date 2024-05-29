@@ -1,4 +1,4 @@
-const imageContainer = document.querySelector(".changing-image-container");
+/*const imageContainer = document.querySelector(".changing-image-container");
 
 for (let i = 1; i <= 20; i++) {
     const picture = document.createElement("picture");
@@ -21,7 +21,7 @@ for (let i = 1; i <= 20; i++) {
     picture.appendChild(img);
 
     imageContainer.appendChild(picture);
-}
+}*/
 
 
 
