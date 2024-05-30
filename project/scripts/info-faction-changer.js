@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
       
         if (screenWidth < 700) {
             infoRows.forEach(row => {
-                row.setAttribute('hidden', true);
+                row.setAttribute("hidden", true);
             });
             handleFactionSelection();
         } else {
             infoRows.forEach(row => {
-                row.removeAttribute('hidden');
+                row.removeAttribute("hidden");
             });
         }
     }
@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function() {
     function handleFactionSelection() {
         const selectedFactionId = factionSelect.value;
     
-        infoRows.forEach(row => row.removeAttribute('hidden'));
-        infoRows.forEach(row => row.setAttribute('hidden', true));
+        infoRows.forEach(row => row.removeAttribute("hidden"));
+        infoRows.forEach(row => row.setAttribute("hidden", true));
     
         const selectedFactionElement = document.querySelector(`#${selectedFactionId}`).parentElement;
 
         if (selectedFactionElement) {
-            selectedFactionElement.removeAttribute('hidden');
+            selectedFactionElement.removeAttribute("hidden");
         }
     }
     
