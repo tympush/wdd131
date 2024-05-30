@@ -1,11 +1,11 @@
-let reviewCount = localStorage.getItem("reviewCount");
+let resultCount = localStorage.getItem("resultCount");
 
-if (!reviewCount) {
-    reviewCount = 0;
+if (!resultCount) {
+    resultCount = 0;
 } else {
-    reviewCount = parseInt(reviewCount);
+    resultCount = parseInt(resultCount);
 }
 
-reviewCount++;
+resultCount++;
 
-localStorage.setItem("reviewCount", reviewCount);
+localStorage.setItem("resultCount", resultCount);
